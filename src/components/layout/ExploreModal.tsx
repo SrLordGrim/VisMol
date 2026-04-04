@@ -44,7 +44,7 @@ const TagModal: React.FC<TagModalProps> = ({ isOpen, onClose, activeTags, onTogg
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className={`p-4 sm:p-6 border-b flex items-center justify-between ${borderClass}`}>
-                    <h2 className="text-lg sm:text-xl font-bold">Select Tags</h2>
+                    <h2 className="text-lg sm:text-xl font-bold">Seleccionar etiquetas</h2>
                     <button onClick={onClose} className={`p-2 rounded-full transition-colors ${isDark ? 'hover:bg-neutral-800' : 'hover:bg-neutral-100'}`}>
                         <X size={18} />
                     </button>
@@ -77,7 +77,7 @@ const TagModal: React.FC<TagModalProps> = ({ isOpen, onClose, activeTags, onTogg
 };
 
 export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDark }) => {
-    const [activeCategory, setActiveCategory] = useState<string>('All');
+    const [activeCategory, setActiveCategory] = useState<string>('Todas');
     const [searchQuery, setSearchQuery] = useState('');
     const [activeTags, setActiveTags] = useState<string[]>([]);
     const [isTagModalOpen, setIsTagModalOpen] = useState(false);
@@ -85,7 +85,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
     const [isLoadingPdb, setIsLoadingPdb] = useState(false);
     const [pdbError, setPdbError] = useState<string | null>(null);
 
-    const categories = ['All', ...Array.from(new Set(MOLECULE_GALLERY.map(m => m.category)))];
+    const categories = ['Todas', ...Array.from(new Set(MOLECULE_GALLERY.map(m => m.category)))];
     const allTags = Array.from(new Set(MOLECULE_GALLERY.flatMap(m => m.tags)));
 
     // Calculate tag counts
@@ -101,7 +101,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
     const categoryCounts = useMemo(() => {
         const counts: Record<string, number> = {};
         categories.forEach(cat => {
-            if (cat === 'All') {
+            if (cat === 'Todas') {
                 counts[cat] = MOLECULE_GALLERY.length;
             } else {
                 counts[cat] = MOLECULE_GALLERY.filter(item => item.category === cat).length;
@@ -125,7 +125,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
         
         // Validate PDB ID format (4 alphanumeric characters)
         if (!/^[A-Z0-9]{4}$/.test(pdbId)) {
-            setPdbError('Please enter a valid 4-character PDB ID (e.g., 1CRN)');
+            setPdbError('Introduce un ID PDB válido de 4 caracteres (por ejemplo, 1CRN)');
             return;
         }
 
@@ -140,7 +140,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                 title: pdbId,
                 category: 'Custom',
                 tags: [],
-                description: `Loading structure ${pdbId} from RCSB PDB...`,
+                description: `Cargando estructura ${pdbId} desde RCSB PDB...`,
                 url: `https://files.rcsb.org/download/${pdbId}.pdb`
             };
 
@@ -151,7 +151,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
             onClose();
         } catch (error) {
             console.error('Error loading structure:', error);
-            setPdbError('Failed to load structure. Please check the ID and try again.');
+            setPdbError('No se pudo cargar la estructura. Verifica el ID e inténtalo de nuevo.');
         } finally {
             setIsLoadingPdb(false);
         }
@@ -165,7 +165,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
 
     const filteredItems = useMemo(() => {
         return MOLECULE_GALLERY.filter(item => {
-            const matchesCategory = activeCategory === 'All' || item.category === activeCategory;
+            const matchesCategory = activeCategory === 'Todas' || item.category === activeCategory;
             const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 item.id.toLowerCase().includes(searchQuery.toLowerCase());
             const matchesTag = activeTags.length === 0 || activeTags.some(tag => item.tags.includes(tag));
@@ -227,7 +227,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                     </nav>
 
                     <div className={`p-4 text-xs text-center border-t shrink-0 ${isDark ? 'opacity-40 text-neutral-500' : 'text-neutral-500'} ${borderClass}`}>
-                        Data provided by RCSB PDB
+                        Datos proporcionados por RCSB PDB
                     </div>
                 </div>
 
@@ -250,7 +250,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                             <Search className={`absolute left-3 top-1/2 -translate-y-1/2 transition-colors ${isDark ? 'text-neutral-600 group-focus-within:text-emerald-500' : 'text-neutral-400'}`} size={16} />
                             <input
                                 type="text"
-                                placeholder="Search molecules..."
+                                placeholder="Buscar moléculas..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 className={`w-full pl-9 pr-4 py-2 rounded-lg border outline-none transition-all text-sm ${isDark
@@ -288,7 +288,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                             <div className={`relative flex-1 group`}>
                                 <input
                                     type="text"
-                                    placeholder="PDB ID"
+                                    placeholder="ID PDB"
                                     value={pdbIdInput}
                                     onChange={(e) => {
                                         setPdbIdInput(e.target.value.toUpperCase());
@@ -313,12 +313,12 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                                 {isLoadingPdb ? (
                                     <>
                                         <Loader2 size={14} className="animate-spin" />
-                                        <span>Loading...</span>
+                                        <span>Cargando...</span>
                                     </>
                                 ) : (
                                     <>
                                         <ArrowRight size={14} />
-                                        <span>Load</span>
+                                        <span>Cargar</span>
                                     </>
                                 )}
                             </button>
@@ -337,7 +337,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                                 <Search className={`absolute left-3 top-1/2 -translate-y-1/2 transition-colors ${isDark ? 'text-neutral-600 group-focus-within:text-emerald-500' : 'text-neutral-400'}`} size={18} />
                                 <input
                                     type="text"
-                                    placeholder="Search molecules by name or ID..."
+                                    placeholder="Buscar moléculas por nombre o ID..."
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                     className={`w-full pl-10 pr-4 py-2.5 rounded-xl border outline-none transition-all ${isDark
@@ -357,7 +357,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                             <div className={`relative flex-1 group`}>
                                 <input
                                     type="text"
-                                    placeholder="PDB ID (e.g., 1CRN)"
+                                    placeholder="ID PDB (ej.: 1CRN)"
                                     value={pdbIdInput}
                                     onChange={(e) => {
                                         setPdbIdInput(e.target.value.toUpperCase());
@@ -382,12 +382,12 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                                 {isLoadingPdb ? (
                                     <>
                                         <Loader2 size={16} className="animate-spin" />
-                                        <span>Loading...</span>
+                                        <span>Cargando...</span>
                                     </>
                                 ) : (
                                     <>
                                         <ArrowRight size={16} />
-                                        <span>Load</span>
+                                        <span>Cargar</span>
                                     </>
                                 )}
                             </button>
@@ -403,7 +403,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                     <div className="px-4 sm:px-6 py-3 sm:py-4 flex flex-wrap gap-2 overflow-x-auto items-center shrink-0">
                         {activeTags.length === 0 ? (
                             <span className={`text-xs ${isDark ? 'text-neutral-500' : 'text-neutral-500'}`}>
-                                No tags selected
+                                No hay etiquetas seleccionadas
                             </span>
                         ) : (
                             activeTags.map(tag => (
@@ -429,7 +429,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                                 }`}
                         >
                             <Plus size={14} />
-                            Add Tags
+                            Agregar etiquetas
                         </button>
                     </div>
 
@@ -475,7 +475,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                         {filteredItems.length === 0 && (
                             <div className="h-full flex flex-col items-center justify-center opacity-40">
                                 <Grid size={48} className="mb-4" />
-                                <p>No molecules found matching your filters.</p>
+                                <p>No se encontraron moléculas con esos filtros.</p>
                             </div>
                         )}
                     </div>

@@ -1,4 +1,4 @@
-import { Layers, Eye, EyeOff, Activity, Droplet, Box, Type, Sun, Moon, Atom, Github, X, FileText, Tag, Palette, Play, RotateCw, Sparkles } from 'lucide-react';
+import { Layers, Eye, EyeOff, Activity, Droplet, Box, Type, Sun, Moon, Atom, X, FileText, Tag, Palette, Play, RotateCw, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 
 import { ViewerState, Structure, RenderStyle, AnimationMode } from '@/lib/types';
@@ -109,7 +109,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                         {/* Atom Representation */}
                         <div>
                             <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                                <Palette size={12} /> Atom Representation
+                                <Palette size={12} /> Representación atómica
                             </h2>
                             <Select
                                 value={viewState.renderStyle}
@@ -123,7 +123,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                         {/* Animation */}
                         <div>
                             <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                                <RotateCw size={12} /> Animation
+                                <RotateCw size={12} /> Animación
                             </h2>
                             <Select
                                 value={viewState.animationMode}
@@ -137,7 +137,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                         {/* Trajectory */}
                         <div>
                             <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                                <Play size={12} /> Trajectory
+                                <Play size={12} /> Trayectoria
                             </h2>
                             <label className={`flex items-center gap-3 p-3 rounded-lg transition-all cursor-pointer ${
                                 viewState.playTrajectory
@@ -150,14 +150,14 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                                     onChange={(e) => toggle('playTrajectory')}
                                     className="w-4 h-4 rounded border-neutral-300 text-emerald-600 focus:ring-emerald-500"
                                 />
-                                <span className="text-sm font-medium">Play trajectory</span>
+                                <span className="text-sm font-medium">Reproducir trayectoria</span>
                             </label>
                         </div>
 
                         {/* Stars */}
                         <div>
                             <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                                <Sparkles size={12} /> Background
+                                <Sparkles size={12} /> Fondo
                             </h2>
                             <label className={`flex items-center gap-3 p-3 rounded-lg transition-all cursor-pointer ${
                                 viewState.showStars
@@ -170,39 +170,39 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                                     onChange={(e) => toggle('showStars')}
                                     className="w-4 h-4 rounded border-neutral-300 text-emerald-600 focus:ring-emerald-500"
                                 />
-                                <span className="text-sm font-medium">Show stars</span>
+                                <span className="text-sm font-medium">Mostrar estrellas</span>
                             </label>
                         </div>
 
                         {/* Visibility Layers */}
                         <div>
                             <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                                <Layers size={12} /> Structure Layers
+                                <Layers size={12} /> Capas de la estructura
                             </h2>
                             <div className="space-y-2">
                                 <LayerToggle
-                                    label="Polypeptide Chain"
+                                    label="Cadena polipeptídica"
                                     active={viewState.showProtein}
                                     onClick={() => toggle('showProtein')}
                                     icon={<Activity size={14} />}
                                     isDark={isDark}
                                 />
                                 <LayerToggle
-                                    label="Ligands & HetAtm"
+                                    label="Ligandos y heteroátomos"
                                     active={viewState.showLigands}
                                     onClick={() => toggle('showLigands')}
                                     icon={<Box size={14} />}
                                     isDark={isDark}
                                 />
                                 <LayerToggle
-                                    label="Solvent (Water)"
+                                    label="Solvente (agua)"
                                     active={viewState.showWater}
                                     onClick={() => toggle('showWater')}
                                     icon={<Droplet size={14} />}
                                     isDark={isDark}
                                 />
                                 <LayerToggle
-                                    label="Annotations"
+                                    label="Anotaciones"
                                     active={viewState.showAnnotations}
                                     onClick={() => toggle('showAnnotations')}
                                     icon={<Type size={14} />}
@@ -212,20 +212,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                         </div>
                     </div>
 
-                    {/* GitHub Footer */}
                     <div className={`p-5 border-t mt-auto shrink-0 ${isDark ? 'border-neutral-800' : 'border-neutral-200'}`}>
-                        <a
-                            href="https://github.com/sammwyy/biovis"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-medium transition-all ${isDark
-                                ? 'bg-neutral-800 hover:bg-neutral-700 text-neutral-300'
-                                : 'bg-neutral-100 hover:bg-neutral-200 text-neutral-800'
-                                }`}
-                        >
-                            <Github size={16} />
-                            <span>GitHub Repo</span>
-                        </a>
                     </div>
                 </div>
             </>
@@ -253,7 +240,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                 {/* Molecule Details Card */}
                 <div className="space-y-4">
                     <h2 className={`text-xs font-bold uppercase tracking-wider mb-2 flex items-center gap-2 ${sectionTitleClass}`}>
-                        <FileText size={12} /> Molecule Details
+                        <FileText size={12} /> Detalles de la molécula
                     </h2>
                     {structure?.metadata ? (
                         <div className={`p-4 rounded-xl border text-xs leading-relaxed space-y-4 ${isDark ? 'bg-neutral-900/30 border-neutral-800' : 'bg-neutral-50/80 border-neutral-200 text-neutral-800'}`}>
@@ -267,7 +254,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                                 </div>
                                 {structure.metadata.classification && (
                                     <div className="text-right max-w-[50%]">
-                                        <span className="opacity-50 block mb-1">Category</span>
+                                        <span className="opacity-50 block mb-1">Categoría</span>
                                         <span className="font-medium block break-words">{structure.metadata.classification}</span>
                                     </div>
                                 )}
@@ -276,7 +263,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                             {/* Name */}
                             {structure.metadata.title && (
                                 <div className="pt-2 border-t border-dashed border-opacity-10 border-current">
-                                    <span className="opacity-50 block mb-1">Name</span>
+                                    <span className="opacity-50 block mb-1">Nombre</span>
                                     <span className="font-bold text-sm block leading-snug">{structure.metadata.title}</span>
                                 </div>
                             )}
@@ -299,19 +286,19 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                             <div className="pt-2 border-t border-dashed border-opacity-10 border-current space-y-2">
                                 {structure.metadata.resolution && (
                                     <div className="flex justify-between items-center">
-                                        <span className="opacity-50">Resolution</span>
+                                        <span className="opacity-50">Resolución</span>
                                         <span className="font-mono">{structure.metadata.resolution.toFixed(2)} Å</span>
                                     </div>
                                 )}
                                 {structure.metadata.depositionDate && (
                                     <div className="flex justify-between items-center">
-                                        <span className="opacity-50">Date</span>
+                                        <span className="opacity-50">Fecha</span>
                                         <span className="font-mono">{structure.metadata.depositionDate}</span>
                                     </div>
                                 )}
                                 {structure.metadata.experimentMethod && (
                                     <div className="block pt-1">
-                                        <span className="opacity-50 block mb-1">Method</span>
+                                        <span className="opacity-50 block mb-1">Método</span>
                                         <span className="font-medium opacity-80">{structure.metadata.experimentMethod}</span>
                                     </div>
                                 )}
@@ -321,8 +308,8 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                         <div className={`p-4 rounded-xl border text-xs leading-relaxed ${isDark ? 'bg-neutral-900/30 border-neutral-800' : 'bg-neutral-50/80 border-neutral-200 text-neutral-800'}`}>
                             <div className={`text-center py-4 ${isDark ? 'text-neutral-500' : 'text-neutral-500'}`}>
                                 <FileText size={24} className="mx-auto mb-2 opacity-40" />
-                                <p className="text-xs">No molecule loaded</p>
-                                <p className="text-[10px] mt-1 opacity-60">Load a PDB file to see details</p>
+                                <p className="text-xs">No hay ninguna molécula cargada</p>
+                                <p className="text-[10px] mt-1 opacity-60">Carga un archivo PDB para ver los detalles</p>
                             </div>
                         </div>
                     )}
@@ -331,7 +318,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                 {/* Atom Representation */}
                 <div>
                     <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                        <Palette size={12} /> Atom Representation
+                        <Palette size={12} /> Representación atómica
                     </h2>
                     <Select
                         value={viewState.renderStyle}
@@ -345,7 +332,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                 {/* Animation */}
                 <div>
                     <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                        <RotateCw size={12} /> Animation
+                        <RotateCw size={12} /> Animación
                     </h2>
                     <Select
                         value={viewState.animationMode}
@@ -359,7 +346,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                 {/* Trajectory */}
                 <div>
                     <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                        <Play size={12} /> Trajectory
+                        <Play size={12} /> Trayectoria
                     </h2>
                     <label className={`flex items-center gap-3 p-3 rounded-lg transition-all cursor-pointer ${
                         viewState.playTrajectory
@@ -372,14 +359,14 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                             onChange={() => toggle('playTrajectory')}
                             className="w-4 h-4 rounded border-neutral-300 text-emerald-600 focus:ring-emerald-500"
                         />
-                        <span className="text-sm font-medium">Play trajectory</span>
+                        <span className="text-sm font-medium">Reproducir trayectoria</span>
                     </label>
                 </div>
 
                 {/* Stars */}
                 <div>
                     <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                        <Sparkles size={12} /> Background
+                        <Sparkles size={12} /> Fondo
                     </h2>
                     <label className={`flex items-center gap-3 p-3 rounded-lg transition-all cursor-pointer ${
                         viewState.showStars
@@ -392,39 +379,39 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                             onChange={() => toggle('showStars')}
                             className="w-4 h-4 rounded border-neutral-300 text-emerald-600 focus:ring-emerald-500"
                         />
-                        <span className="text-sm font-medium">Show stars</span>
+                        <span className="text-sm font-medium">Mostrar estrellas</span>
                     </label>
                 </div>
 
                 {/* Visibility Layers */}
                 <div>
                     <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
-                        <Layers size={12} /> Structure Layers
+                        <Layers size={12} /> Capas de la estructura
                     </h2>
                     <div className="space-y-2">
                         <LayerToggle
-                            label="Polypeptide Chain"
+                            label="Cadena polipeptídica"
                             active={viewState.showProtein}
                             onClick={() => toggle('showProtein')}
                             icon={<Activity size={14} />}
                             isDark={isDark}
                         />
                         <LayerToggle
-                            label="Ligands & HetAtm"
+                            label="Ligandos y heteroátomos"
                             active={viewState.showLigands}
                             onClick={() => toggle('showLigands')}
                             icon={<Box size={14} />}
                             isDark={isDark}
                         />
                         <LayerToggle
-                            label="Solvent (Water)"
+                            label="Solvente (agua)"
                             active={viewState.showWater}
                             onClick={() => toggle('showWater')}
                             icon={<Droplet size={14} />}
                             isDark={isDark}
                         />
                         <LayerToggle
-                            label="Annotations"
+                            label="Anotaciones"
                             active={viewState.showAnnotations}
                             onClick={() => toggle('showAnnotations')}
                             icon={<Type size={14} />}
@@ -434,20 +421,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                 </div>
             </div>
 
-            {/* GitHub Footer */}
             <div className={`p-5 border-t mt-auto shrink-0 ${isDark ? 'border-neutral-800' : 'border-neutral-200'}`}>
-                <a
-                    href="https://github.com/sammwyy/biovis"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-medium transition-all ${isDark
-                        ? 'bg-neutral-800 hover:bg-neutral-700 text-neutral-300'
-                        : 'bg-neutral-100 hover:bg-neutral-200 text-neutral-800'
-                        }`}
-                >
-                    <Github size={16} />
-                    <span>GitHub Repo</span>
-                </a>
             </div>
         </div>
     );

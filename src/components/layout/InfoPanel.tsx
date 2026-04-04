@@ -59,7 +59,7 @@ export const InfoPanel: React.FC<Props> = ({ atom, onClose, onAddAnnotation, isD
                 <div className="grid grid-cols-2 gap-y-5 gap-x-3">
 
                     <div>
-                        <span className={`text-[10px] uppercase tracking-widest font-bold block mb-1 ${labelClass}`}>Residue</span>
+                        <span className={`text-[10px] uppercase tracking-widest font-bold block mb-1 ${labelClass}`}>Residuo</span>
                         <div className="flex items-baseline gap-2">
                             <span className="font-bold">{atom.residueName}</span>
                             <span className="text-xs opacity-70 font-mono">#{atom.residueSeq}</span>
@@ -67,14 +67,14 @@ export const InfoPanel: React.FC<Props> = ({ atom, onClose, onAddAnnotation, isD
                     </div>
 
                     <div>
-                        <span className={`text-[10px] uppercase tracking-widest font-bold block mb-1 ${labelClass}`}>Chain</span>
+                        <span className={`text-[10px] uppercase tracking-widest font-bold block mb-1 ${labelClass}`}>Cadena</span>
                         <div className="flex items-center gap-2">
                             <span className={`px-2 py-0.5 rounded text-xs font-bold ${isDark ? 'bg-neutral-800 border border-neutral-700' : 'bg-neutral-100 border border-neutral-200'}`}>{atom.chainID}</span>
                         </div>
                     </div>
 
                     <div className="col-span-2">
-                        <span className={`text-[10px] uppercase tracking-widest font-bold block mb-2 ${labelClass}`}>Coordinates (Å)</span>
+                        <span className={`text-[10px] uppercase tracking-widest font-bold block mb-2 ${labelClass}`}>Coordenadas (Å)</span>
                         <div className={`grid grid-cols-3 gap-2 p-2.5 rounded-lg border ${isDark ? 'bg-black/40 border-neutral-800' : 'bg-neutral-50 border-neutral-100'}`}>
                             <div className="text-center">
                                 <span className={`text-[9px] block mb-1 ${isDark ? 'opacity-40' : 'text-neutral-500'}`}>X</span>
@@ -97,7 +97,7 @@ export const InfoPanel: React.FC<Props> = ({ atom, onClose, onAddAnnotation, isD
                             <span className={valueClass}>{atom.bFactor}</span>
                         </div>
                         <div className="text-right">
-                            <span className={`text-[10px] uppercase tracking-widest font-bold block ${labelClass}`}>Occupancy</span>
+                            <span className={`text-[10px] uppercase tracking-widest font-bold block ${labelClass}`}>Ocupación</span>
                             <span className={valueClass}>{atom.occupancy}</span>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ export const InfoPanel: React.FC<Props> = ({ atom, onClose, onAddAnnotation, isD
                         onClick={() => setShowAnnoInput(true)}
                         className={`w-full py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-all ${isDark ? 'bg-neutral-800 hover:bg-neutral-700 text-white' : 'bg-white hover:bg-neutral-50 border border-neutral-200 text-neutral-700'}`}
                     >
-                        <Plus size={14} /> Add Annotation
+                        <Plus size={14} /> Agregar anotación
                     </button>
                 ) : (
                     <div className="space-y-3 animate-in fade-in slide-in-from-bottom-2 duration-200">
@@ -119,7 +119,7 @@ export const InfoPanel: React.FC<Props> = ({ atom, onClose, onAddAnnotation, isD
                             autoFocus
                             value={annoText}
                             onChange={(e) => setAnnoText(e.target.value)}
-                            placeholder="Label text..."
+                            placeholder="Texto de la etiqueta..."
                             className={`w-full rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 ${inputClass}`}
                         />
                         <div className="flex gap-2">
@@ -127,13 +127,13 @@ export const InfoPanel: React.FC<Props> = ({ atom, onClose, onAddAnnotation, isD
                                 onClick={handleAdd}
                                 className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-1.5 rounded-lg text-sm font-medium"
                             >
-                                Save
+                                Guardar
                             </button>
                             <button
                                 onClick={() => setShowAnnoInput(false)}
                                 className={`flex-1 py-1.5 rounded-lg text-sm font-medium ${isDark ? 'bg-neutral-800 hover:bg-neutral-700 text-neutral-200' : 'bg-white border border-neutral-300 hover:bg-neutral-50 text-neutral-800'}`}
                             >
-                                Cancel
+                                Cancelar
                             </button>
                         </div>
                     </div>
