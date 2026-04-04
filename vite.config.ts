@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.USE_PATH_PREFIX === 'true' ? '/biovis/' : '/',
+  base: '/VisMol/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
