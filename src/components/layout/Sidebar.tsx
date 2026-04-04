@@ -85,7 +85,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                     <div className={`h-16 px-6 border-b flex items-center justify-between shrink-0 ${headerClass}`}>
                         <h1 className="text-lg font-bold tracking-tight flex items-center gap-2">
                             <Atom className="text-emerald-500" size={24} />
-                            <span className="font-mono tracking-tighter text-xl">BioVIS</span>
+                            <span className="font-mono tracking-tighter text-xl">VisMol</span>
                         </h1>
                         <div className="flex items-center gap-2">
                             <button
@@ -226,7 +226,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
             <div className={`h-16 px-6 border-b flex items-center justify-between shrink-0 ${headerClass}`}>
                 <h1 className="text-lg font-bold tracking-tight flex items-center gap-2">
                     <Atom className="text-emerald-500" size={24} />
-                    <span className="font-mono tracking-tighter text-xl">BioVIS</span>
+                    <span className="font-mono tracking-tighter text-xl">VisMol</span>
                 </h1>
                 <button
                     onClick={() => toggle('isDarkMode')}
