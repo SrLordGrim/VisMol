@@ -150,7 +150,7 @@ function App() {
             setAnnotations([]);
         } catch (err: any) {
             console.error("Failed to parse file", err);
-            alert(err.message || "Error parsing structure file.");
+            alert(err.message || "Error al procesar el archivo de estructura.");
         }
     };
 
@@ -168,7 +168,7 @@ function App() {
             };
             reader.onerror = () => {
                 setIsLoading(false);
-                alert("Error reading file.");
+                alert("Error al leer el archivo.");
             };
             reader.readAsText(file);
         }, 100);
@@ -227,7 +227,7 @@ function App() {
             }
         } catch (e: any) {
             console.error(e);
-            alert(e.message || "Could not load molecule from database.");
+            alert(e.message || "No se pudo cargar la molécula desde la base de datos.");
         } finally {
             setIsLoading(false);
         }
@@ -247,7 +247,7 @@ function App() {
                 };
                 reader.onerror = () => {
                     setIsLoading(false);
-                    alert("Error reading file.");
+                    alert("Error al leer el archivo.");
                 };
                 reader.readAsText(file);
             }, 100);
@@ -347,7 +347,7 @@ function App() {
                     <div className={`h-16 border-b flex items-center justify-between px-6 transition-colors z-20 relative shrink-0 ${isDark ? 'bg-[#09090b] border-neutral-800' : 'bg-white border-neutral-200'}`}>
                         <div className={`font-mono text-sm ${isDark ? 'text-neutral-400' : 'text-neutral-700'}`}>
                             <span className="flex items-center gap-2">
-                                <span className="font-semibold tracking-wide">Viewer</span>
+                                <span className="font-semibold tracking-wide">Visor</span>
                                 {structure && <span className="opacity-50 mx-2">/</span>}
                                 {structure?.metadata?.id && (
                                     <span className="font-mono">{structure.metadata.id}</span>
@@ -356,8 +356,8 @@ function App() {
                         </div>
 
                         <div className="flex items-center gap-2">
-                            <IconButton onClick={resetCamera} icon={<RotateCcw size={16} />} title="Reset View" isDark={isDark} />
-                            <IconButton onClick={triggerScreenshot} icon={<Camera size={16} />} title="Capture" isDark={isDark} />
+                            <IconButton onClick={resetCamera} icon={<RotateCcw size={16} />} title="Reiniciar vista" isDark={isDark} />
+                            <IconButton onClick={triggerScreenshot} icon={<Camera size={16} />} title="Captura" isDark={isDark} />
                             <div className={`h-6 w-px mx-2 opacity-30 ${isDark ? 'bg-neutral-700' : 'bg-neutral-300'}`}></div>
 
                             {/* History Dropdown */}
@@ -372,7 +372,7 @@ function App() {
                                             )}
                                         </>
                                     }
-                                    title="History"
+                                    title="Historial"
                                     isDark={isDark}
                                     variant="secondary"
                                 />
@@ -380,11 +380,11 @@ function App() {
                                 {showHistory && (
                                     <div className={`absolute right-0 top-full mt-2 w-80 rounded-xl shadow-xl border z-50 overflow-hidden ${isDark ? 'bg-[#09090b] border-neutral-800' : 'bg-white border-neutral-200'}`}>
                                         <div className={`p-3 border-b text-xs font-bold uppercase tracking-wider flex items-center gap-2 ${isDark ? 'border-neutral-800 text-neutral-500' : 'border-neutral-200 text-neutral-600'}`}>
-                                            <Clock size={12} /> Recent History
+                                            <Clock size={12} /> Historial reciente
                                         </div>
                                         <div className="max-h-80 overflow-y-auto">
                                             {history.length === 0 ? (
-                                                <div className="p-6 text-center opacity-40 text-sm">No recent items</div>
+                                                <div className="p-6 text-center opacity-40 text-sm">No hay elementos recientes</div>
                                             ) : (
                                                 history.map((item, idx) => (
                                                     <button
@@ -413,12 +413,12 @@ function App() {
                                 isDark={isDark}
                             >
                                 <Search size={16} className="mr-2" />
-                                Explore
+                                Explorar
                             </Button>
 
                             <label className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg cursor-pointer transition-all shadow-lg shadow-emerald-900/20 text-sm font-medium ml-2">
                                 <Upload size={16} />
-                                <span>Open File</span>
+                                <span>Abrir archivo</span>
                                 <input type="file" accept=".pdb,.ent,.cif,.mmtf,.sdf,.mol2,.gro,.xtc,.trr,.dcd,.mrc,.ccp4" onChange={handleFileUpload} className="hidden" />
                             </label>
                         </div>
@@ -430,7 +430,7 @@ function App() {
                     {isLoading && (
                         <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black/60 backdrop-blur-md transition-opacity">
                             <Loader2 className="animate-spin text-emerald-500 mb-2" size={48} />
-                            <span className="text-white font-medium tracking-wide">Processing Structure...</span>
+                            <span className="text-white font-medium tracking-wide">Procesando estructura...</span>
                         </div>
                     )}
 
