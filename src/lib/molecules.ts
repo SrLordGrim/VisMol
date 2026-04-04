@@ -12,209 +12,209 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: '1CRN',
         title: 'Crambin',
-        category: 'Proteins',
-        tags: ['Small', 'High Res', 'Plant', 'Thionin'],
-        description: 'A small seed storage protein from Abyssinian cabbage. High resolution standard for crystallography.',
+        category: 'Proteínas',
+        tags: ['Pequeña', 'Alta resolución', 'Planta', 'Tionina'],
+        description: 'Pequeña proteína de almacenamiento de semillas de la col abisinia. Es un estándar de alta resolución para cristalografía.',
         url: 'https://files.rcsb.org/download/1CRN.pdb'
     },
     {
         id: '1GFL',
-        title: 'Green Fluorescent Protein',
-        category: 'Proteins',
-        tags: ['Bioluminescence', 'Nobel Prize', 'Beta Barrel', 'Fluorescent'],
-        description: 'The famous GFP from Aequorea victoria jellyfish. Note the beta-barrel structure and chromophore.',
+        title: 'Proteína fluorescente verde',
+        category: 'Proteínas',
+        tags: ['Bioluminiscencia', 'Premio Nobel', 'Barril beta', 'Fluorescente'],
+        description: 'La famosa GFP de la medusa Aequorea victoria. Destaca la estructura de barril beta y el cromóforo.',
         url: 'https://files.rcsb.org/download/1GFL.pdb'
     },
     {
         id: '4HHB',
-        title: 'Hemoglobin',
-        category: 'Proteins',
-        tags: ['Blood', 'Oxygen', 'Tetramer', 'Heme'],
-        description: 'Deoxyhemoglobin molecule which transports oxygen in the blood. Contains four subunits.',
+        title: 'Hemoglobina',
+        category: 'Proteínas',
+        tags: ['Sangre', 'Oxígeno', 'Tetrámero', 'Hemo'],
+        description: 'Molécula de desoxihemoglobina que transporta oxígeno en la sangre. Contiene cuatro subunidades.',
         url: 'https://files.rcsb.org/download/4HHB.pdb'
     },
     {
         id: '1MBN',
-        title: 'Myoglobin',
-        category: 'Proteins',
-        tags: ['Muscle', 'Oxygen', 'Historic', 'Heme'],
-        description: 'Sperm whale myoglobin. The first protein structure ever determined by X-ray crystallography.',
+        title: 'Mioglobina',
+        category: 'Proteínas',
+        tags: ['Músculo', 'Oxígeno', 'Histórica', 'Hemo'],
+        description: 'Mioglobina de cachalote. Fue la primera estructura proteica determinada mediante cristalografía de rayos X.',
         url: 'https://files.rcsb.org/download/1MBN.pdb'
     },
     {
         id: '1E9W',
         title: 'Amylase',
-        category: 'Enzymes',
-        tags: ['Digestion', 'Pancreatic', 'Glycosidase'],
-        description: 'Pancreatic alpha-amylase, an enzyme that breaks down starch into sugars.',
+        category: 'Enzimas',
+        tags: ['Digestión', 'Pancreática', 'Glicosidasa'],
+        description: 'Alfa-amilasa pancreática, una enzima que descompone el almidón en azúcares.',
         url: 'https://files.rcsb.org/download/1E9W.pdb'
     },
     {
         id: '8LYZ',
         title: 'Lysozyme',
-        category: 'Enzymes',
-        tags: ['Antibacterial', 'Egg White', 'Glycosidase'],
-        description: 'Hen egg white lysozyme, breaks down bacterial cell walls. Model system for studies.',
+        category: 'Enzimas',
+        tags: ['Antibacteriana', 'Clara de huevo', 'Glicosidasa'],
+        description: 'Lisozima de clara de huevo de gallina, descompone las paredes celulares bacterianas. Es un sistema modelo para estudios.',
         url: 'https://files.rcsb.org/download/8LYZ.pdb'
     },
     {
         id: '1TIM',
         title: 'Triosephosphate Isomerase',
-        category: 'Enzymes',
-        tags: ['Glycolysis', 'Catalytic Perfection', 'Barrel'],
-        description: 'TIM barrel structure, considered an example of catalytic perfection in enzymes.',
+        category: 'Enzimas',
+        tags: ['Glucólisis', 'Perfección catalítica', 'Barril'],
+        description: 'Estructura de barril TIM, considerada un ejemplo de perfección catalítica en enzimas.',
         url: 'https://files.rcsb.org/download/1TIM.pdb'
     },
     {
         id: '1CEX',
         title: 'Chymotrypsin',
-        category: 'Enzymes',
-        tags: ['Protease', 'Digestive', 'Serine Protease'],
-        description: 'Serine protease that digests proteins in the small intestine.',
+        category: 'Enzimas',
+        tags: ['Proteasa', 'Digestiva', 'Proteasa de serina'],
+        description: 'Proteasa de serina que digiere proteínas en el intestino delgado.',
         url: 'https://files.rcsb.org/download/1CEX.pdb'
     },
     {
         id: '1RBP',
-        title: 'Retinol Binding Protein',
-        category: 'Proteins',
-        tags: ['Transport', 'Vitamin A', 'Beta Barrel'],
-        description: 'Transports retinol (Vitamin A) in the blood plasma.',
+        title: 'Proteína fijadora de retinol',
+        category: 'Proteínas',
+        tags: ['Transporte', 'Vitamina A', 'Barril beta'],
+        description: 'Transporta retinol (vitamina A) en el plasma sanguíneo.',
         url: 'https://files.rcsb.org/download/1RBP.pdb'
     },
 
     // DNA/RNA Structures
     {
         id: '1BNA',
-        title: 'B-DNA Helix',
-        category: 'DNA/RNA',
-        tags: ['Genetics', 'Double Helix', 'Canonical'],
-        description: 'Structure of a B-DNA dodecamer. The classic right-handed double helix form.',
+        title: 'Hélice de ADN-B',
+        category: 'ADN/ARN',
+        tags: ['Genética', 'Doble hélice', 'Canónica'],
+        description: 'Estructura de un dodecámero de ADN-B. Es la forma clásica de doble hélice dextrógira.',
         url: 'https://files.rcsb.org/download/1BNA.pdb'
     },
     {
         id: '4R4V',
-        title: 'A-DNA Helix',
-        category: 'DNA/RNA',
-        tags: ['Double Helix', 'Dehydrated', 'Wide Groove'],
-        description: 'A-form DNA, wider and shorter than B-DNA, found in dehydrated conditions.',
+        title: 'Hélice de ADN-A',
+        category: 'ADN/ARN',
+        tags: ['Doble hélice', 'Deshidratada', 'Surco ancho'],
+        description: 'ADN en forma A, más ancho y corto que el ADN-B, presente en condiciones deshidratadas.',
         url: 'https://files.rcsb.org/download/4R4V.pdb'
     },
     {
         id: '2GKU',
         title: 'Z-DNA',
-        category: 'DNA/RNA',
-        tags: ['Left-handed', 'Zigzag', 'Alternative'],
-        description: 'Left-handed DNA double helix with zigzag backbone. Alternative DNA form.',
+        category: 'ADN/ARN',
+        tags: ['Zurda', 'Zigzag', 'Alternativa'],
+        description: 'Doble hélice de ADN zurda con esqueleto en zigzag. Es una forma alternativa de ADN.',
         url: 'https://files.rcsb.org/download/2GKU.pdb'
     },
     {
         id: '1EHZ',
         title: 'tRNA',
-        category: 'DNA/RNA',
-        tags: ['Transfer RNA', 'Cloverleaf', 'Translation'],
-        description: 'Yeast phenylalanine tRNA, shows characteristic L-shaped 3D structure.',
+        category: 'ADN/ARN',
+        tags: ['ARN de transferencia', 'Hoja de trébol', 'Traducción'],
+        description: 'ARNt de fenilalanina de levadura, muestra la característica estructura tridimensional en forma de L.',
         url: 'https://files.rcsb.org/download/1EHZ.pdb'
     },
     {
         id: '1FFK',
         title: 'Ribozyme',
-        category: 'DNA/RNA',
-        tags: ['Catalytic RNA', 'Hammerhead', 'Enzyme'],
-        description: 'Hammerhead ribozyme, an RNA molecule that catalyzes chemical reactions.',
+        category: 'ADN/ARN',
+        tags: ['ARN catalítico', 'Cabeza de martillo', 'Enzima'],
+        description: 'Ribozima de cabeza de martillo, una molécula de ARN que cataliza reacciones químicas.',
         url: 'https://files.rcsb.org/download/1FFK.pdb'
     },
 
     // Membrane Proteins & Ion Channels
     {
         id: '1K4C',
-        title: 'Potassium Channel',
-        category: 'Ion Channels',
-        tags: ['Membrane', 'Transport', 'Ion', 'Selectivity'],
-        description: 'Structure of the KcsA potassium channel from Streptomyces lividans.',
+        title: 'Canal de potasio',
+        category: 'Canales iónicos',
+        tags: ['Membrana', 'Transporte', 'Ión', 'Selectividad'],
+        description: 'Estructura del canal de potasio KcsA de Streptomyces lividans.',
         url: 'https://files.rcsb.org/download/1K4C.pdb'
     },
     {
         id: '1BL8',
         title: 'Aquaporin',
-        category: 'Membrane Proteins',
-        tags: ['Water Channel', 'Membrane', 'Transport'],
-        description: 'Aquaporin-1 water channel, facilitates rapid water transport across membranes.',
+        category: 'Proteínas de membrana',
+        tags: ['Canal de agua', 'Membrana', 'Transporte'],
+        description: 'Canal de agua aquaporina-1, facilita el transporte rápido de agua a través de membranas.',
         url: 'https://files.rcsb.org/download/1BL8.pdb'
     },
     {
         id: '1F88',
         title: 'Bacteriorhodopsin',
-        category: 'Membrane Proteins',
-        tags: ['Light-driven', 'Proton Pump', 'Seven Helix'],
-        description: 'Light-driven proton pump from halobacteria. Seven transmembrane helix structure.',
+        category: 'Proteínas de membrana',
+        tags: ['Activada por luz', 'Bomba de protones', 'Siete hélices'],
+        description: 'Bomba de protones activada por luz de halobacterias. Presenta una estructura de siete hélices transmembrana.',
         url: 'https://files.rcsb.org/download/1F88.pdb'
     },
     {
         id: '2BG9',
-        title: 'G-protein Coupled Receptor',
-        category: 'Membrane Proteins',
-        tags: ['GPCR', 'Signal Transduction', 'Rhodopsin'],
-        description: 'Bovine rhodopsin, prototype for G-protein coupled receptor family.',
+        title: 'Receptor acoplado a proteína G',
+        category: 'Proteínas de membrana',
+        tags: ['GPCR', 'Transducción de señales', 'Rodopsina'],
+        description: 'Rodopsina bovina, prototipo de la familia de receptores acoplados a proteína G.',
         url: 'https://files.rcsb.org/download/2BG9.pdb'
     },
 
     // Structural Proteins
     {
         id: '1CAG',
-        title: 'Collagen',
-        category: 'Structural',
-        tags: ['Triple Helix', 'Skin', 'Connective', 'Extracellular'],
-        description: 'Model of the collagen triple helix structure. Major component of connective tissue.',
+        title: 'Colágeno',
+        category: 'Estructurales',
+        tags: ['Triple hélice', 'Piel', 'Conectivo', 'Extracelular'],
+        description: 'Modelo de la estructura de triple hélice del colágeno. Es un componente principal del tejido conectivo.',
         url: 'https://files.rcsb.org/download/1CAG.pdb'
     },
     {
         id: '1A6M',
-        title: 'Actin',
-        category: 'Structural',
-        tags: ['Cytoskeleton', 'Muscle', 'Filament'],
-        description: 'Actin filament, major component of cytoskeleton and muscle thin filaments.',
+        title: 'Actina',
+        category: 'Estructurales',
+        tags: ['Citoesqueleto', 'Músculo', 'Filamento'],
+        description: 'Filamento de actina, componente principal del citoesqueleto y de los filamentos delgados musculares.',
         url: 'https://files.rcsb.org/download/1A6M.pdb'
     },
     {
         id: '1TUB',
-        title: 'Tubulin',
-        category: 'Structural',
-        tags: ['Microtubules', 'Cytoskeleton', 'Cell Division'],
-        description: 'Alpha-beta tubulin dimer, building block of microtubules.',
+        title: 'Tubulina',
+        category: 'Estructurales',
+        tags: ['Microtúbulos', 'Citoesqueleto', 'División celular'],
+        description: 'Dímero alfa-beta de tubulina, bloque de construcción de los microtúbulos.',
         url: 'https://files.rcsb.org/download/1TUB.pdb'
     },
     {
         id: '2HBB',
-        title: 'Keratin',
-        category: 'Structural',
-        tags: ['Hair', 'Skin', 'Coiled Coil', 'Intermediate Filament'],
-        description: 'Alpha-keratin coiled-coil structure, major component of hair and nails.',
+        title: 'Queratina',
+        category: 'Estructurales',
+        tags: ['Cabello', 'Piel', 'Coiled-coil', 'Filamento intermedio'],
+        description: 'Estructura coiled-coil de alfa-queratina, componente principal del cabello y las uñas.',
         url: 'https://files.rcsb.org/download/2HBB.pdb'
     },
 
     // Hormones & Signaling
     {
         id: '3PQR',
-        title: 'Insulin',
-        category: 'Hormones',
-        tags: ['Human', 'Medical', 'Hexamer', 'Diabetes'],
-        description: 'Human insulin hexamer complexed with zinc. Regulates blood glucose levels.',
+        title: 'Insulina',
+        category: 'Hormonas',
+        tags: ['Humana', 'Médica', 'Hexámero', 'Diabetes'],
+        description: 'Hexámero de insulina humana complejado con zinc. Regula los niveles de glucosa en sangre.',
         url: 'https://files.rcsb.org/download/3PQR.pdb'
     },
     {
         id: '1GCN',
-        title: 'Glucagon',
-        category: 'Hormones',
-        tags: ['Metabolism', 'Alpha Helix', 'Counter-regulatory'],
-        description: 'Glucagon molecule which regulates blood glucose levels, counter to insulin.',
+        title: 'Glucagón',
+        category: 'Hormonas',
+        tags: ['Metabolismo', 'Alfa hélice', 'Contrarreguladora'],
+        description: 'Molécula de glucagón que regula los niveles de glucosa en sangre en sentido opuesto a la insulina.',
         url: 'https://files.rcsb.org/download/1GCN.pdb'
     },
     {
         id: '1HRP',
-        title: 'Growth Hormone',
-        category: 'Hormones',
-        tags: ['Pituitary', 'Four Helix Bundle', 'Receptor'],
-        description: 'Human growth hormone, four-helix bundle structure.',
+        title: 'Hormona del crecimiento',
+        category: 'Hormonas',
+        tags: ['Hipofisaria', 'Haz de cuatro hélices', 'Receptor'],
+        description: 'Hormona del crecimiento humana con estructura de haz de cuatro hélices.',
         url: 'https://files.rcsb.org/download/1HRP.pdb'
     },
 
@@ -222,25 +222,25 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: '6VSB',
         title: 'SARS-CoV-2 Spike',
-        category: 'Viruses',
-        tags: ['Pandemic', 'Viral', 'Glycoprotein', 'Membrane Fusion'],
-        description: 'Prefusion 2019-nCoV spike glycoprotein with a single receptor-binding domain up.',
+        category: 'Virus',
+        tags: ['Pandemia', 'Viral', 'Glicoproteína', 'Fusión de membrana'],
+        description: 'Glicoproteína espiga de 2019-nCoV en prefusión con un dominio de unión al receptor en posición elevada.',
         url: 'https://files.rcsb.org/download/6VSB.pdb'
     },
     {
         id: '2BBK',
         title: 'HIV-1 Protease',
-        category: 'Viruses',
-        tags: ['Retroviral', 'Drug Target', 'Dimer'],
-        description: 'HIV-1 protease, homodimeric aspartyl protease essential for viral maturation.',
+        category: 'Virus',
+        tags: ['Retroviral', 'Diana farmacológica', 'Dímero'],
+        description: 'Proteasa del VIH-1, aspartil proteasa homodimérica esencial para la maduración viral.',
         url: 'https://files.rcsb.org/download/2BBK.pdb'
     },
     {
         id: '1A34',
-        title: 'Influenza Hemagglutinin',
-        category: 'Viruses',
-        tags: ['Influenza', 'Membrane Fusion', 'Glycoprotein'],
-        description: 'Influenza virus hemagglutinin, mediates viral entry into host cells.',
+        title: 'Hemaglutinina de la influenza',
+        category: 'Virus',
+        tags: ['Influenza', 'Fusión de membrana', 'Glicoproteína'],
+        description: 'Hemaglutinina del virus de la influenza, media la entrada viral en las células del huésped.',
         url: 'https://files.rcsb.org/download/1A34.pdb'
     },
 
@@ -248,129 +248,129 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: '5B2I',
         title: 'CRISPR-Cas9',
-        category: 'Enzymes',
-        tags: ['Gene Editing', 'Large', 'Complex', 'Bacterial Defense'],
-        description: 'Crystal structure of Streptococcus pyogenes Cas9 complexed with guide RNA and target DNA.',
+        category: 'Enzimas',
+        tags: ['Edición genética', 'Grande', 'Complejo', 'Defensa bacteriana'],
+        description: 'Estructura cristalina de Cas9 de Streptococcus pyogenes complejada con ARN guía y ADN diana.',
         url: 'https://files.rcsb.org/download/5B2I.pdb'
     },
     {
         id: '7DDI',
-        title: 'DNA Polymerase',
-        category: 'Enzymes',
-        tags: ['Replication', 'DNA', 'Complex', 'Fidelity'],
-        description: 'DNA Polymerase I from E. coli, shows replication fidelity mechanism.',
+        title: 'Polimerasa de ADN',
+        category: 'Enzimas',
+        tags: ['Replicación', 'ADN', 'Complejo', 'Fidelidad'],
+        description: 'ADN polimerasa I de E. coli, muestra el mecanismo de fidelidad de la replicación.',
         url: 'https://files.rcsb.org/download/7DDI.pdb'
     },
     {
         id: '1GIX',
-        title: 'ATP Synthase',
-        category: 'Enzymes',
-        tags: ['Energy', 'Rotation', 'Mitochondria', 'Motor Protein'],
-        description: 'F1-ATPase portion of ATP synthase, rotational motor that synthesizes ATP.',
+        title: 'ATP sintasa',
+        category: 'Enzimas',
+        tags: ['Energía', 'Rotación', 'Mitocondria', 'Proteína motora'],
+        description: 'Porción F1-ATPasa de la ATP sintasa, motor rotatorio que sintetiza ATP.',
         url: 'https://files.rcsb.org/download/1GIX.pdb'
     },
     {
         id: '1RYB',
-        title: 'Ribosome',
-        category: 'Complexes',
-        tags: ['Translation', 'Large', 'RNA-Protein', 'Antibiotics'],
-        description: 'Bacterial 70S ribosome, the molecular machine for protein synthesis.',
+        title: 'Ribosoma',
+        category: 'Complejos',
+        tags: ['Traducción', 'Grande', 'ARN-proteína', 'Antibióticos'],
+        description: 'Ribosoma bacteriano 70S, la máquina molecular para la síntesis de proteínas.',
         url: 'https://files.rcsb.org/download/1RYB.pdb'
     },
 
     // Transport & Storage
     {
         id: '1LMP',
-        title: 'Myoglobin',
-        category: 'Proteins',
-        tags: ['Oxygen Storage', 'Muscle', 'Heme'],
-        description: 'Sperm whale myoglobin, oxygen storage in muscle tissues.',
+        title: 'Mioglobina',
+        category: 'Proteínas',
+        tags: ['Almacenamiento de oxígeno', 'Músculo', 'Hemo'],
+        description: 'Mioglobina de cachalote, encargada del almacenamiento de oxígeno en tejidos musculares.',
         url: 'https://files.rcsb.org/download/1LMP.pdb'
     },
     {
         id: '1FTP',
         title: 'Ferritin',
-        category: 'Proteins',
-        tags: ['Iron Storage', 'Spherical', 'Mineralization'],
-        description: 'Ferritin, iron storage protein with spherical cage-like structure.',
+        category: 'Proteínas',
+        tags: ['Almacenamiento de hierro', 'Esférica', 'Mineralización'],
+        description: 'Ferritina, proteína de almacenamiento de hierro con estructura esférica tipo jaula.',
         url: 'https://files.rcsb.org/download/1FTP.pdb'
     },
     {
         id: '1MSH',
-        title: 'Malate Dehydrogenase',
-        category: 'Enzymes',
-        tags: ['Citric Acid Cycle', 'Oxidoreductase', 'Mitochondrial'],
-        description: 'Malate dehydrogenase, key enzyme in citric acid cycle.',
+        title: 'Malato deshidrogenasa',
+        category: 'Enzimas',
+        tags: ['Ciclo del ácido cítrico', 'Oxidorreductasa', 'Mitocondrial'],
+        description: 'Malato deshidrogenasa, enzima clave en el ciclo del ácido cítrico.',
         url: 'https://files.rcsb.org/download/1MSH.pdb'
     },
 
     // Antibodies & Immune System
     {
         id: '1IGT',
-        title: 'Immunoglobulin',
-        category: 'Proteins',
-        tags: ['Antibody', 'Immune', 'Y-shaped'],
-        description: 'Immunoglobulin G Fab fragment, shows antigen-binding site structure.',
+        title: 'Inmunoglobulina',
+        category: 'Proteínas',
+        tags: ['Anticuerpo', 'Inmunitaria', 'En forma de Y'],
+        description: 'Fragmento Fab de inmunoglobulina G, muestra la estructura del sitio de unión al antígeno.',
         url: 'https://files.rcsb.org/download/1IGT.pdb'
     },
     {
         id: '1TCR',
-        title: 'T-cell Receptor',
-        category: 'Proteins',
-        tags: ['Immune', 'Recognition', 'MHC'],
-        description: 'T-cell receptor complex, recognizes antigens presented by MHC molecules.',
+        title: 'Receptor de células T',
+        category: 'Proteínas',
+        tags: ['Inmunitaria', 'Reconocimiento', 'MHC'],
+        description: 'Complejo del receptor de células T, reconoce antígenos presentados por moléculas del MHC.',
         url: 'https://files.rcsb.org/download/1TCR.pdb'
     },
 
     // Nucleic Acid Binding Proteins
     {
         id: '1LMB',
-        title: 'Lac Repressor',
-        category: 'Proteins',
-        tags: ['Gene Regulation', 'DNA-binding', 'Helix-Turn-Helix'],
-        description: 'Lac repressor bound to DNA, classic example of gene regulation.',
+        title: 'Represor lac',
+        category: 'Proteínas',
+        tags: ['Regulación génica', 'Unión al ADN', 'Hélice-giro-hélice'],
+        description: 'Represor lac unido al ADN, ejemplo clásico de regulación génica.',
         url: 'https://files.rcsb.org/download/1LMB.pdb'
     },
     {
         id: '1YRN',
-        title: 'Ribonuclease A',
-        category: 'Enzymes',
-        tags: ['RNA Degradation', 'Small', 'Historic'],
-        description: 'Bovine pancreatic ribonuclease A, early model for protein folding studies.',
+        title: 'Ribonucleasa A',
+        category: 'Enzimas',
+        tags: ['Degradación de ARN', 'Pequeña', 'Histórica'],
+        description: 'Ribonucleasa A pancreática bovina, modelo temprano para estudios de plegamiento proteico.',
         url: 'https://files.rcsb.org/download/1YRN.pdb'
     },
     {
         id: '2DRP',
-        title: 'DNA Topoisomerase',
-        category: 'Enzymes',
-        tags: ['DNA Supercoiling', 'Topology', 'Anticancer Target'],
-        description: 'DNA topoisomerase I, regulates DNA supercoiling and topology.',
+        title: 'Topoisomerasa de ADN',
+        category: 'Enzimas',
+        tags: ['Superenrollamiento del ADN', 'Topología', 'Diana anticancerígena'],
+        description: 'Topoisomerasa I de ADN, regula el superenrollamiento y la topología del ADN.',
         url: 'https://files.rcsb.org/download/2DRP.pdb'
     },
 
     // Metabolic Enzymes
     {
         id: '4COX',
-        title: 'Cytochrome c Oxidase',
-        category: 'Enzymes',
-        tags: ['Respiration', 'Membrane', 'Oxygen Reduction'],
-        description: 'Cytochrome c oxidase, terminal enzyme in mitochondrial electron transport chain.',
+        title: 'Citocromo c oxidasa',
+        category: 'Enzimas',
+        tags: ['Respiración', 'Membrana', 'Reducción de oxígeno'],
+        description: 'Citocromo c oxidasa, enzima terminal de la cadena mitocondrial de transporte de electrones.',
         url: 'https://files.rcsb.org/download/4COX.pdb'
     },
     {
         id: '1PHK',
-        title: 'Phosphofructokinase',
-        category: 'Enzymes',
-        tags: ['Glycolysis', 'Allosteric', 'Regulation'],
-        description: 'Phosphofructokinase, key regulatory enzyme in glycolysis.',
+        title: 'Fosfofructoquinasa',
+        category: 'Enzimas',
+        tags: ['Glucólisis', 'Alostérica', 'Regulación'],
+        description: 'Fosfofructoquinasa, enzima reguladora clave de la glucólisis.',
         url: 'https://files.rcsb.org/download/1PHK.pdb'
     },
     {
         id: '8CAT',
-        title: 'Catalase',
-        category: 'Enzymes',
-        tags: ['Antioxidant', 'Heme', 'Hydrogen Peroxide'],
-        description: 'Catalase, converts hydrogen peroxide to water and oxygen.',
+        title: 'Catalasa',
+        category: 'Enzimas',
+        tags: ['Antioxidante', 'Hemo', 'Peróxido de hidrógeno'],
+        description: 'Catalasa, convierte el peróxido de hidrógeno en agua y oxígeno.',
         url: 'https://files.rcsb.org/download/8CAT.pdb'
     },
 
@@ -378,17 +378,17 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: '1AON',
         title: 'GroEL',
-        category: 'Proteins',
-        tags: ['Chaperonin', 'Protein Folding', 'Cylindrical'],
-        description: 'GroEL chaperonin, assists protein folding in bacteria.',
+        category: 'Proteínas',
+        tags: ['Chaperonina', 'Plegamiento proteico', 'Cilíndrica'],
+        description: 'Chaperonina GroEL, asiste el plegamiento de proteínas en bacterias.',
         url: 'https://files.rcsb.org/download/1AON.pdb'
     },
     {
         id: '2HSP',
         title: 'Hsp70',
-        category: 'Proteins',
-        tags: ['Heat Shock', 'Chaperone', 'ATPase'],
-        description: 'Hsp70 chaperone, prevents protein aggregation under stress conditions.',
+        category: 'Proteínas',
+        tags: ['Choque térmico', 'Chaperona', 'ATPasa'],
+        description: 'Chaperona Hsp70, evita la agregación de proteínas bajo condiciones de estrés.',
         url: 'https://files.rcsb.org/download/2HSP.pdb'
     },
 
@@ -396,17 +396,17 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: '1F3G',
         title: 'Ras',
-        category: 'Proteins',
-        tags: ['GTPase', 'Oncogene', 'Signal Transduction'],
-        description: 'Ras GTPase, important in cell signaling and frequently mutated in cancers.',
+        category: 'Proteínas',
+        tags: ['GTPasa', 'Oncogén', 'Transducción de señales'],
+        description: 'GTPasa Ras, importante en la señalización celular y frecuentemente mutada en cánceres.',
         url: 'https://files.rcsb.org/download/1F3G.pdb'
     },
     {
         id: '1CDL',
         title: 'Calmodulin',
-        category: 'Proteins',
-        tags: ['Calcium Binding', 'EF-hand', 'Signaling'],
-        description: 'Calmodulin, calcium-binding messenger protein with EF-hand motifs.',
+        category: 'Proteínas',
+        tags: ['Unión a calcio', 'EF-hand', 'Señalización'],
+        description: 'Calmodulina, proteína mensajera fijadora de calcio con motivos EF-hand.',
         url: 'https://files.rcsb.org/download/1CDL.pdb'
     },
 
@@ -414,17 +414,17 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: '2CGA',
         title: 'Concanavalin A',
-        category: 'Proteins',
-        tags: ['Lectin', 'Carbohydrate Binding', 'Plant'],
-        description: 'Concanavalin A, plant lectin that binds specific sugar molecules.',
+        category: 'Proteínas',
+        tags: ['Lectina', 'Unión a carbohidratos', 'Planta'],
+        description: 'Concanavalina A, lectina vegetal que se une a moléculas específicas de azúcar.',
         url: 'https://files.rcsb.org/download/2CGA.pdb'
     },
     {
         id: '1SLT',
-        title: 'Lysozyme with substrate',
-        category: 'Enzymes',
-        tags: ['Enzyme-Substrate', 'Carbohydrate', 'Antibacterial'],
-        description: 'Lysozyme complexed with substrate analog, shows catalytic mechanism.',
+        title: 'Lisozima con sustrato',
+        category: 'Enzimas',
+        tags: ['Enzima-sustrato', 'Carbohidrato', 'Antibacteriana'],
+        description: 'Lisozima complejada con un análogo de sustrato, muestra el mecanismo catalítico.',
         url: 'https://files.rcsb.org/download/1SLT.pdb'
     },
 
@@ -432,25 +432,25 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: '1UBQ',
         title: 'Ubiquitin',
-        category: 'Proteins',
-        tags: ['Protein Degradation', 'Small', 'Signaling'],
-        description: 'Ubiquitin, small regulatory protein that tags proteins for degradation.',
+        category: 'Proteínas',
+        tags: ['Degradación proteica', 'Pequeña', 'Señalización'],
+        description: 'Ubiquitina, pequeña proteína reguladora que marca proteínas para su degradación.',
         url: 'https://files.rcsb.org/download/1UBQ.pdb'
     },
     {
         id: '1QHW',
-        title: 'p53 Tumor Suppressor',
-        category: 'Proteins',
-        tags: ['Cancer', 'Transcription Factor', 'DNA-binding'],
-        description: 'DNA-binding domain of p53 tumor suppressor protein.',
+        title: 'Supresor tumoral p53',
+        category: 'Proteínas',
+        tags: ['Cáncer', 'Factor de transcripción', 'Unión al ADN'],
+        description: 'Dominio de unión al ADN de la proteína supresora tumoral p53.',
         url: 'https://files.rcsb.org/download/1QHW.pdb'
     },
     {
         id: '1FAS',
-        title: 'Fatty Acid Synthase',
-        category: 'Enzymes',
-        tags: ['Lipid Synthesis', 'Multifunctional', 'Large Complex'],
-        description: 'Mammalian fatty acid synthase, large multifunctional enzyme complex.',
+        title: 'Sintasa de ácidos grasos',
+        category: 'Enzimas',
+        tags: ['Síntesis de lípidos', 'Multifuncional', 'Gran complejo'],
+        description: 'Sintasa de ácidos grasos de mamíferos, gran complejo enzimático multifuncional.',
         url: 'https://files.rcsb.org/download/1FAS.pdb'
     },
 

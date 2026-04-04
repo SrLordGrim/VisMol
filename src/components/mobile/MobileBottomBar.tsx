@@ -33,7 +33,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({
                 <IconButton
                     onClick={onMoleculeDetails}
                     icon={<FileText size={20} />}
-                    title="Molecule Details"
+                    title="Detalles de la molécula"
                     isDark={isDark}
                     size="lg"
                 />
@@ -41,21 +41,21 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({
             <IconButton
                 onClick={onResetCamera}
                 icon={<RotateCcw size={20} />}
-                title="Reset View"
+                title="Reiniciar vista"
                 isDark={isDark}
                 size="lg"
             />
             <IconButton
                 onClick={onScreenshot}
                 icon={<Camera size={20} />}
-                title="Capture"
+                title="Captura"
                 isDark={isDark}
                 size="lg"
             />
             <IconButton
                 onClick={onExplore}
                 icon={<Search size={20} />}
-                title="Explore"
+                title="Explorar"
                 isDark={isDark}
                 size="lg"
             />
@@ -64,7 +64,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({
                     ? 'text-emerald-400 hover:bg-neutral-800 hover:text-emerald-300'
                     : 'text-emerald-600 hover:bg-neutral-100 hover:text-emerald-700'
                     }`}
-                title="Open File"
+                title="Abrir archivo"
             >
                 <Upload size={20} />
                 <input type="file" accept=".pdb,.ent,.cif,.mmtf,.sdf,.mol2,.gro,.xtc,.trr,.dcd,.mrc,.ccp4" onChange={onFileUpload} className="hidden" />

@@ -33,11 +33,11 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({
                 <IconButton
                     onClick={onToggleSidebar}
                     icon={<Menu size={20} />}
-                    title="Menu"
+                    title="Menú"
                     isDark={isDark}
                 />
                 <span className="flex items-center gap-2">
-                    <span className="font-semibold tracking-wide">Viewer</span>
+                    <span className="font-semibold tracking-wide">Visor</span>
                     {structure && <span className="opacity-50 mx-2">/</span>}
                     {structure?.metadata?.id && (
                         <span className="font-mono">{structure.metadata.id}</span>
@@ -52,7 +52,7 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({
                         <IconButton
                             onClick={onToggleHistory}
                             icon={<History size={16} className={isDark ? 'text-neutral-400' : 'text-neutral-700'} />}
-                            title="History"
+                            title="Historial"
                             isDark={isDark}
                             variant="secondary"
                         />
@@ -64,11 +64,11 @@ export const MobileNavbar: React.FC<MobileNavbarProps> = ({
                     {showHistory && (
                         <div className={`absolute right-0 top-full mt-2 w-80 rounded-xl shadow-xl border z-50 overflow-hidden ${isDark ? 'bg-[#09090b] border-neutral-800' : 'bg-white border-neutral-200'}`}>
                             <div className={`p-3 border-b text-xs font-bold uppercase tracking-wider flex items-center gap-2 ${isDark ? 'border-neutral-800 text-neutral-500' : 'border-neutral-200 text-neutral-600'}`}>
-                                <Clock size={12} /> Recent History
+                                <Clock size={12} /> Historial reciente
                             </div>
                             <div className="max-h-80 overflow-y-auto">
                                 {history.length === 0 ? (
-                                    <div className="p-6 text-center opacity-40 text-sm">No recent items</div>
+                                    <div className="p-6 text-center opacity-40 text-sm">No hay elementos recientes</div>
                                 ) : (
                                     history.map((item, idx) => (
                                         <button

@@ -207,7 +207,7 @@ export const Viewer: React.FC<Props> = ({ structure, viewState, annotations, onA
             {!structure && (
                 <div className={`absolute inset-0 flex flex-col items-center justify-center pointer-events-none opacity-40 ${isDark ? 'text-neutral-400' : 'text-neutral-600'}`}>
                     <div className="text-4xl font-light mb-2 tracking-tighter">BioVIS</div>
-                    <p className="text-xs tracking-widest uppercase">No Molecular Structure Loaded</p>
+                    <p className="text-xs tracking-widest uppercase">No hay ninguna estructura molecular cargada</p>
                 </div>
             )}
         </div>
