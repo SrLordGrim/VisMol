@@ -1,5 +1,5 @@
 import { useState, useCallback, useTransition, useEffect, useRef } from 'react';
-import { RotateCcw, Camera, Search, Upload, History, Clock, Loader2 } from 'lucide-react';
+import { RotateCcw, Camera, Search, Upload, History, Clock, Loader2, Heart } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 
 import { Sidebar } from './components/layout/Sidebar';
@@ -407,14 +407,28 @@ function App() {
                                 )}
                             </div>
 
-                            <Button
-                                onClick={() => setIsExploreOpen(true)}
-                                variant="secondary"
-                                isDark={isDark}
-                            >
-                                <Search size={16} className="mr-2" />
-                                Explorar
-                            </Button>
+                            <a
+    href="https://www.patreon.com/kevinzhul"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+        isDark
+            ? 'bg-[#1a1328] hover:bg-[#24183a] text-fuchsia-200 border border-fuchsia-800/50'
+            : 'bg-fuchsia-50 hover:bg-fuchsia-100 text-fuchsia-700 border border-fuchsia-200'
+    }`}
+>
+    <Heart size={16} />
+    <span>Patreon</span>
+</a>
+
+<Button
+    onClick={() => setIsExploreOpen(true)}
+    variant="secondary"
+    isDark={isDark}
+>
+    <Search size={16} className="mr-2" />
+    Explorar
+</Button>
 
                             <label className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg cursor-pointer transition-all shadow-lg shadow-emerald-900/20 text-sm font-medium ml-2">
                                 <Upload size={16} />
