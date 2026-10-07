@@ -6,9 +6,11 @@ script baja cada pieza desde NIH 3D, la comprime con gltfpack (meshopt) y la
 deja en public/celulas/, junto con una miniatura propia que renderiza Blender
 (las de NIH 3D tienen fondo blanco y varias muestran el modelo de perfil).
 
-Solo entran modelos con licencia CC-BY, CC-BY-SA o de dominio público: las
-licencias no comerciales (NC) quedaron fuera porque VisMol tiene un botón de
-Patreon, y las «sin derivados» (ND) no admiten la compresión que se hace aquí.
+Entran modelos con licencia CC-BY, CC-BY-SA, CC-BY-NC, CC-BY-NC-SA o de
+dominio público. Las no comerciales (NC) se admiten desde el 07-oct-2026,
+cuando VisMol quedó como herramienta gratuita, sin botón de donaciones; si
+alguna vez volviera a monetizarse, esos modelos tendrían que salir. Las «sin
+derivados» (ND) no admiten la compresión que se hace aquí.
 
 Uso:  python3 tools/celulas.py        (requiere npx para gltfpack, blender e ImageMagick)
 """
@@ -22,7 +24,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG = os.path.join(RAIZ, "src", "lib", "celulas.json")
 SALIDA = os.path.join(RAIZ, "public", "celulas")
 API = "https://3d.nih.gov/api"
-LICENCIAS_OK = {"CC-BY", "CC-BY-SA", "Public Domain"}
+LICENCIAS_OK = {"CC-BY", "CC-BY-SA", "CC-BY-NC", "CC-BY-NC-SA", "Public Domain"}
 # Por encima de este tamaño se simplifica la malla: el visor tiene que cargar
 # rápido en un teléfono, y la diferencia no se nota a la distancia de la cámara.
 OBJETIVO = 2_500_000

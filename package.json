@@ -1,5 +1,5 @@
 {
-  "name": "biovis",
+  "name": "vismol",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,14 +12,15 @@
   "dependencies": {
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
+    "lucide-react": "^0.511.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "three": "^0.176.0",
-    "lucide-react": "^0.511.0",
     "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^22.20.5",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^5.0.0",

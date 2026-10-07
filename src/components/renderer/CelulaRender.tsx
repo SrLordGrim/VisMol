@@ -10,10 +10,11 @@ import { Celula, urlPiezas } from '@/lib/celulas';
 // normaliza y la cámara se coloca siempre a la misma distancia relativa.
 const TAMANO = 20;
 
-// Los modelos vienen comprimidos con meshopt (ver tools/celulas.py); useGLTF
-// trae el decodificador por defecto.
+// Los modelos vienen comprimidos con meshopt (ver tools/celulas.py), cuyo
+// decodificador va dentro del paquete. Draco se apaga (segundo argumento):
+// useGLTF lo bajaría de un CDN de Google, y ninguno de nuestros modelos lo usa.
 const Pieza: React.FC<{ url: string; color: string | null; opacity: number }> = ({ url, color, opacity }) => {
-    const { scene } = useGLTF(url);
+    const { scene } = useGLTF(url, false);
 
     const objeto = useMemo(() => {
         const copia = scene.clone(true);

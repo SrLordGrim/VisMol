@@ -1,5 +1,6 @@
 import { X, Tag, FileText } from 'lucide-react';
 import { Structure } from '@/lib/types';
+import { fechaEs, metodoEs } from '@/lib/formato';
 
 interface Props {
     isOpen: boolean;
@@ -96,13 +97,13 @@ export const MoleculeDetailsModal: React.FC<Props> = ({ isOpen, onClose, structu
                             {structure.metadata.depositionDate && (
                                 <div className="flex justify-between items-center">
                                     <span className="opacity-50">Fecha</span>
-                                    <span className="font-mono">{structure.metadata.depositionDate}</span>
+                                    <span className="font-mono">{fechaEs(structure.metadata.depositionDate)}</span>
                                 </div>
                             )}
                             {structure.metadata.experimentMethod && (
                                 <div className="block pt-1">
                                     <span className="opacity-50 block mb-1">Método</span>
-                                    <span className="font-medium opacity-80">{structure.metadata.experimentMethod}</span>
+                                    <span className="font-medium opacity-80">{metodoEs(structure.metadata.experimentMethod)}</span>
                                 </div>
                             )}
                         </div>

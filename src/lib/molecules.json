@@ -1,0 +1,1063 @@
+[
+  {
+    "id": "4HHB",
+    "title": "Hemoglobina",
+    "category": "Proteínas",
+    "tags": [
+      "Sangre",
+      "Oxígeno",
+      "Tetrámero"
+    ],
+    "description": "Desoxihemoglobina humana: cuatro subunidades, cada una con un grupo hemo que une una molécula de oxígeno. Transporta el oxígeno en los glóbulos rojos.",
+    "url": "https://files.rcsb.org/download/4HHB.pdb",
+    "verifica": "hemoglobin|haemoglobin"
+  },
+  {
+    "id": "1MBN",
+    "title": "Mioglobina",
+    "category": "Proteínas",
+    "tags": [
+      "Músculo",
+      "Oxígeno",
+      "Histórica"
+    ],
+    "description": "Mioglobina de cachalote, la primera proteína cuya estructura se resolvió, por John Kendrew. Almacena oxígeno en el músculo.",
+    "url": "https://files.rcsb.org/download/1MBN.pdb",
+    "verifica": "myoglobin"
+  },
+  {
+    "id": "1MBO",
+    "title": "Oximioglobina",
+    "category": "Proteínas",
+    "tags": [
+      "Músculo",
+      "Oxígeno"
+    ],
+    "description": "Mioglobina con una molécula de oxígeno unida a su grupo hemo.",
+    "url": "https://files.rcsb.org/download/1MBO.pdb",
+    "verifica": "myoglobin"
+  },
+  {
+    "id": "1GFL",
+    "title": "Proteína verde fluorescente (GFP)",
+    "category": "Proteínas",
+    "tags": [
+      "Bioluminiscencia",
+      "Premio Nobel",
+      "Barril beta"
+    ],
+    "description": "La GFP de la medusa Aequorea victoria: un barril de once láminas beta que protege el cromóforo que emite luz verde. Su uso como marcador mereció el Nobel de Química de 2008.",
+    "url": "https://files.rcsb.org/download/1GFL.pdb",
+    "verifica": "fluorescent"
+  },
+  {
+    "id": "1CRN",
+    "title": "Crambina",
+    "category": "Proteínas",
+    "tags": [
+      "Pequeña",
+      "Alta resolución",
+      "Planta"
+    ],
+    "description": "Pequeña proteína de las semillas de la col abisinia. Su cristal difracta a resolución atómica, y por eso es un estándar de la cristalografía.",
+    "url": "https://files.rcsb.org/download/1CRN.pdb",
+    "verifica": "crambin|hydrophobic protein"
+  },
+  {
+    "id": "1RBP",
+    "title": "Proteína fijadora de retinol",
+    "category": "Proteínas",
+    "tags": [
+      "Vitamina A",
+      "Transporte"
+    ],
+    "description": "Transporta el retinol (vitamina A) por la sangre desde el hígado hasta los tejidos.",
+    "url": "https://files.rcsb.org/download/1RBP.pdb",
+    "verifica": "retinol"
+  },
+  {
+    "id": "1FHA",
+    "title": "Ferritina",
+    "category": "Proteínas",
+    "tags": [
+      "Hierro",
+      "Almacenamiento"
+    ],
+    "description": "Cadena H de la ferritina humana. Veinticuatro de estas cadenas forman una esfera hueca que almacena hierro dentro de las células.",
+    "url": "https://files.rcsb.org/download/1FHA.pdb",
+    "verifica": "ferritin"
+  },
+  {
+    "id": "1B8E",
+    "title": "Beta-lactoglobulina",
+    "category": "Proteínas",
+    "tags": [
+      "Leche",
+      "Bovina"
+    ],
+    "description": "La proteína más abundante del suero de la leche de vaca.",
+    "url": "https://files.rcsb.org/download/1B8E.pdb",
+    "verifica": "lactoglobulin"
+  },
+  {
+    "id": "1IGT",
+    "title": "Inmunoglobulina G",
+    "category": "Proteínas",
+    "tags": [
+      "Anticuerpo",
+      "Sistema inmune"
+    ],
+    "description": "Un anticuerpo completo con su forma de Y: dos brazos que reconocen el antígeno y un tallo que activa la respuesta inmunitaria.",
+    "url": "https://files.rcsb.org/download/1IGT.pdb",
+    "verifica": "immunoglobulin|igg"
+  },
+  {
+    "id": "1TCR",
+    "title": "Receptor de células T",
+    "category": "Proteínas",
+    "tags": [
+      "Sistema inmune",
+      "Linfocitos"
+    ],
+    "description": "Receptor con el que los linfocitos T reconocen fragmentos de proteínas expuestos en la superficie de otras células.",
+    "url": "https://files.rcsb.org/download/1TCR.pdb",
+    "verifica": "t-cell|t cell"
+  },
+  {
+    "id": "1A1M",
+    "title": "MHC de clase I con un péptido del VIH-2",
+    "category": "Proteínas",
+    "tags": [
+      "Sistema inmune",
+      "VIH"
+    ],
+    "description": "Molécula de histocompatibilidad HLA-B*5301 que exhibe un fragmento de una proteína del VIH-2: así muestran las células infectadas los antígenos a los linfocitos T.",
+    "url": "https://files.rcsb.org/download/1A1M.pdb",
+    "verifica": "mhc|hla|histocompatibility"
+  },
+  {
+    "id": "1UBQ",
+    "title": "Ubiquitina",
+    "category": "Proteínas",
+    "tags": [
+      "Señalización",
+      "Degradación"
+    ],
+    "description": "Pequeña proteína que marca a otras para que el proteasoma las destruya. Está muy conservada en todos los eucariotas.",
+    "url": "https://files.rcsb.org/download/1UBQ.pdb",
+    "verifica": "ubiquitin"
+  },
+  {
+    "id": "1CLL",
+    "title": "Calmodulina",
+    "category": "Proteínas",
+    "tags": [
+      "Calcio",
+      "Señalización"
+    ],
+    "description": "Sensor de calcio con forma de pesa: sus dos lóbulos unen iones de calcio y regulan a decenas de proteínas.",
+    "url": "https://files.rcsb.org/download/1CLL.pdb",
+    "verifica": "calmodulin"
+  },
+  {
+    "id": "1CDL",
+    "title": "Calmodulina con un péptido de su enzima diana",
+    "category": "Proteínas",
+    "tags": [
+      "Calcio",
+      "Señalización"
+    ],
+    "description": "La calmodulina se pliega alrededor de un fragmento de la enzima que regula.",
+    "url": "https://files.rcsb.org/download/1CDL.pdb",
+    "verifica": "calmodulin"
+  },
+  {
+    "id": "5P21",
+    "title": "Ras",
+    "category": "Proteínas",
+    "tags": [
+      "Cáncer",
+      "GTPasa"
+    ],
+    "description": "La proteína H-Ras unida a un análogo del GTP. Ras funciona como interruptor del crecimiento celular, y sus mutaciones están entre las más frecuentes en el cáncer.",
+    "url": "https://files.rcsb.org/download/5P21.pdb",
+    "verifica": "ras"
+  },
+  {
+    "id": "1TUP",
+    "title": "p53 unida al ADN",
+    "category": "Proteínas",
+    "tags": [
+      "Cáncer",
+      "Supresor de tumores"
+    ],
+    "description": "El dominio de la proteína p53 que se une al ADN. La p53 frena la división de las células dañadas, y está mutada en cerca de la mitad de los cánceres humanos.",
+    "url": "https://files.rcsb.org/download/1TUP.pdb",
+    "verifica": "p53"
+  },
+  {
+    "id": "1LBI",
+    "title": "Represor lac",
+    "category": "Proteínas",
+    "tags": [
+      "Regulación génica",
+      "E. coli"
+    ],
+    "description": "Represor del operón lac de E. coli, el interruptor genético con el que Jacob y Monod explicaron cómo se encienden y apagan los genes.",
+    "url": "https://files.rcsb.org/download/1LBI.pdb",
+    "verifica": "lac repressor"
+  },
+  {
+    "id": "1HCQ",
+    "title": "Receptor de estrógenos unido al ADN",
+    "category": "Proteínas",
+    "tags": [
+      "Hormonas",
+      "Factor de transcripción"
+    ],
+    "description": "El dominio del receptor de estrógenos que se une al ADN para activar genes cuando llega la hormona.",
+    "url": "https://files.rcsb.org/download/1HCQ.pdb",
+    "verifica": "estrogen|oestrogen"
+  },
+  {
+    "id": "1AON",
+    "title": "Chaperonina GroEL/GroES",
+    "category": "Proteínas",
+    "tags": [
+      "Plegamiento",
+      "Chaperona"
+    ],
+    "description": "Una cámara de proteínas de E. coli que aísla a otras recién fabricadas para que se plieguen correctamente.",
+    "url": "https://files.rcsb.org/download/1AON.pdb",
+    "verifica": "groel|chaperonin"
+  },
+  {
+    "id": "1AM1",
+    "title": "Hsp90",
+    "category": "Proteínas",
+    "tags": [
+      "Chaperona"
+    ],
+    "description": "El sitio de unión del ATP de la chaperona Hsp90, que ayuda a madurar a muchas proteínas de señalización.",
+    "url": "https://files.rcsb.org/download/1AM1.pdb",
+    "verifica": "hsp90"
+  },
+  {
+    "id": "1FKB",
+    "title": "FKBP12 con rapamicina",
+    "category": "Proteínas",
+    "tags": [
+      "Fármaco",
+      "Inmunosupresor"
+    ],
+    "description": "La proteína FKBP12 unida a la rapamicina, un inmunosupresor que se usa en trasplantes.",
+    "url": "https://files.rcsb.org/download/1FKB.pdb",
+    "verifica": "fkbp|rapamycin"
+  },
+  {
+    "id": "1PGA",
+    "title": "Dominio B1 de la proteína G",
+    "category": "Proteínas",
+    "tags": [
+      "Plegamiento"
+    ],
+    "description": "Pequeño dominio de una proteína de Streptococcus que une anticuerpos; es un modelo clásico para estudiar el plegamiento de las proteínas.",
+    "url": "https://files.rcsb.org/download/1PGA.pdb",
+    "verifica": "protein g"
+  },
+  {
+    "id": "1TIE",
+    "title": "Inhibidor de tripsina de tipo Kunitz",
+    "category": "Proteínas",
+    "tags": [
+      "Planta",
+      "Inhibidor"
+    ],
+    "description": "Inhibidor de proteasas de las semillas del árbol de coral Erythrina caffra.",
+    "url": "https://files.rcsb.org/download/1TIE.pdb",
+    "verifica": "trypsin inhibitor"
+  },
+  {
+    "id": "1E9W",
+    "title": "Tioestreptón",
+    "category": "Proteínas",
+    "tags": [
+      "Antibiótico",
+      "Péptido"
+    ],
+    "description": "Antibiótico peptídico de bacterias Streptomyces que bloquea la síntesis de proteínas en el ribosoma.",
+    "url": "https://files.rcsb.org/download/1E9W.pdb",
+    "verifica": "thiostrepton"
+  },
+  {
+    "id": "1FAS",
+    "title": "Fasciculina",
+    "category": "Proteínas",
+    "tags": [
+      "Toxina",
+      "Veneno de serpiente"
+    ],
+    "description": "Toxina del veneno de la mamba verde que bloquea la acetilcolinesterasa, la enzima que apaga las señales entre los nervios y los músculos.",
+    "url": "https://files.rcsb.org/download/1FAS.pdb",
+    "verifica": "fasciculin"
+  },
+  {
+    "id": "1LTS",
+    "title": "Enterotoxina termolábil de E. coli",
+    "category": "Proteínas",
+    "tags": [
+      "Toxina",
+      "Diarrea"
+    ],
+    "description": "Toxina de Escherichia coli muy parecida a la del cólera; causa la diarrea del viajero.",
+    "url": "https://files.rcsb.org/download/1LTS.pdb",
+    "verifica": "enterotoxin"
+  },
+  {
+    "id": "1LYZ",
+    "title": "Lisozima",
+    "category": "Enzimas",
+    "tags": [
+      "Antibacteriana",
+      "Clara de huevo",
+      "Histórica"
+    ],
+    "description": "Enzima de la clara de huevo de gallina que rompe la pared de las bacterias. Fue la primera enzima cuya estructura se resolvió, por David Phillips en 1965.",
+    "url": "https://files.rcsb.org/download/1LYZ.pdb",
+    "verifica": "lysozyme"
+  },
+  {
+    "id": "4CHA",
+    "title": "Quimotripsina",
+    "category": "Enzimas",
+    "tags": [
+      "Digestión",
+      "Proteasa"
+    ],
+    "description": "Enzima digestiva del páncreas que corta proteínas; es el modelo clásico de las serina proteasas.",
+    "url": "https://files.rcsb.org/download/4CHA.pdb",
+    "verifica": "chymotrypsin"
+  },
+  {
+    "id": "2CGA",
+    "title": "Quimotripsinógeno A",
+    "category": "Enzimas",
+    "tags": [
+      "Digestión",
+      "Precursor"
+    ],
+    "description": "La forma inactiva de la quimotripsina, que el páncreas fabrica para no digerirse a sí mismo; se activa al llegar al intestino.",
+    "url": "https://files.rcsb.org/download/2CGA.pdb",
+    "verifica": "chymotrypsinogen"
+  },
+  {
+    "id": "1SGT",
+    "title": "Tripsina bacteriana",
+    "category": "Enzimas",
+    "tags": [
+      "Proteasa"
+    ],
+    "description": "Tripsina de la bacteria Streptomyces griseus, una serina proteasa como la tripsina digestiva humana.",
+    "url": "https://files.rcsb.org/download/1SGT.pdb",
+    "verifica": "trypsin"
+  },
+  {
+    "id": "1LW6",
+    "title": "Subtilisina con un inhibidor",
+    "category": "Enzimas",
+    "tags": [
+      "Proteasa",
+      "Detergentes"
+    ],
+    "description": "Proteasa de Bacillus unida al inhibidor CI2. Las subtilisinas se usan en los detergentes para quitar manchas de proteínas.",
+    "url": "https://files.rcsb.org/download/1LW6.pdb",
+    "verifica": "subtilisin"
+  },
+  {
+    "id": "1HNE",
+    "title": "Elastasa de neutrófilo",
+    "category": "Enzimas",
+    "tags": [
+      "Sistema inmune",
+      "Proteasa"
+    ],
+    "description": "Proteasa de los glóbulos blancos que destruye bacterias, unida aquí a un inhibidor.",
+    "url": "https://files.rcsb.org/download/1HNE.pdb",
+    "verifica": "elastase"
+  },
+  {
+    "id": "7RSA",
+    "title": "Ribonucleasa A",
+    "category": "Enzimas",
+    "tags": [
+      "ARN",
+      "Premio Nobel"
+    ],
+    "description": "Enzima del páncreas bovino que degrada ARN. Con ella demostró Christian Anfinsen que la secuencia de una proteína determina su forma, trabajo que mereció el Nobel de Química de 1972.",
+    "url": "https://files.rcsb.org/download/7RSA.pdb",
+    "verifica": "ribonuclease"
+  },
+  {
+    "id": "1TIM",
+    "title": "Triosa fosfato isomerasa",
+    "category": "Enzimas",
+    "tags": [
+      "Glucólisis",
+      "Barril TIM"
+    ],
+    "description": "Enzima de la glucólisis, de músculo de pollo. Su plegamiento dio nombre al «barril TIM», uno de los más comunes entre las enzimas.",
+    "url": "https://files.rcsb.org/download/1TIM.pdb",
+    "verifica": "triose"
+  },
+  {
+    "id": "1GD1",
+    "title": "Gliceraldehído-3-fosfato deshidrogenasa",
+    "category": "Enzimas",
+    "tags": [
+      "Glucólisis"
+    ],
+    "description": "Enzima de la glucólisis de la bacteria Bacillus stearothermophilus, con su cofactor NAD.",
+    "url": "https://files.rcsb.org/download/1GD1.pdb",
+    "verifica": "glyceraldehyde"
+  },
+  {
+    "id": "3PGK",
+    "title": "Fosfoglicerato quinasa",
+    "category": "Enzimas",
+    "tags": [
+      "Glucólisis",
+      "Energía"
+    ],
+    "description": "Enzima de la glucólisis de la levadura que fabrica ATP.",
+    "url": "https://files.rcsb.org/download/3PGK.pdb",
+    "verifica": "phosphoglycerate kinase"
+  },
+  {
+    "id": "1LDM",
+    "title": "Lactato deshidrogenasa",
+    "category": "Enzimas",
+    "tags": [
+      "Metabolismo"
+    ],
+    "description": "Enzima que convierte el piruvato en lactato cuando falta oxígeno; esta proviene del músculo de un pequeño tiburón.",
+    "url": "https://files.rcsb.org/download/1LDM.pdb",
+    "verifica": "lactate"
+  },
+  {
+    "id": "1B8V",
+    "title": "Malato deshidrogenasa",
+    "category": "Enzimas",
+    "tags": [
+      "Ciclo de Krebs"
+    ],
+    "description": "Enzima del ciclo de Krebs, aquí de la bacteria antártica Aquaspirillum arcticum.",
+    "url": "https://files.rcsb.org/download/1B8V.pdb",
+    "verifica": "malate"
+  },
+  {
+    "id": "1PYP",
+    "title": "Pirofosfatasa inorgánica",
+    "category": "Enzimas",
+    "tags": [
+      "Metabolismo"
+    ],
+    "description": "Enzima de la levadura que rompe el pirofosfato, un subproducto de la síntesis de ADN y de proteínas.",
+    "url": "https://files.rcsb.org/download/1PYP.pdb",
+    "verifica": "pyrophosphatase"
+  },
+  {
+    "id": "1RHD",
+    "title": "Rodanasa",
+    "category": "Enzimas",
+    "tags": [
+      "Detoxificación"
+    ],
+    "description": "Enzima mitocondrial del hígado bovino que convierte el cianuro en tiocianato, mucho menos tóxico.",
+    "url": "https://files.rcsb.org/download/1RHD.pdb",
+    "verifica": "rhodanese"
+  },
+  {
+    "id": "8CAT",
+    "title": "Catalasa",
+    "category": "Enzimas",
+    "tags": [
+      "Antioxidante"
+    ],
+    "description": "Enzima del hígado bovino que descompone el peróxido de hidrógeno en agua y oxígeno; es de las enzimas más rápidas que se conocen.",
+    "url": "https://files.rcsb.org/download/8CAT.pdb",
+    "verifica": "catalase"
+  },
+  {
+    "id": "2CBA",
+    "title": "Anhidrasa carbónica II",
+    "category": "Enzimas",
+    "tags": [
+      "Respiración"
+    ],
+    "description": "Convierte el dióxido de carbono en bicarbonato a gran velocidad y ayuda a sacar el CO₂ de los tejidos.",
+    "url": "https://files.rcsb.org/download/2CBA.pdb",
+    "verifica": "carbonic anhydrase"
+  },
+  {
+    "id": "1RX2",
+    "title": "Dihidrofolato reductasa",
+    "category": "Enzimas",
+    "tags": [
+      "Fármaco",
+      "Cáncer"
+    ],
+    "description": "Enzima de E. coli con folato y NADP+. Es la diana del metotrexato, usado contra el cáncer, y del antibiótico trimetoprima.",
+    "url": "https://files.rcsb.org/download/1RX2.pdb",
+    "verifica": "dihydrofolate"
+  },
+  {
+    "id": "4AKE",
+    "title": "Adenilato quinasa",
+    "category": "Enzimas",
+    "tags": [
+      "Energía"
+    ],
+    "description": "Enzima de E. coli que reparte grupos fosfato entre el ATP, el ADP y el AMP para equilibrar la energía de la célula.",
+    "url": "https://files.rcsb.org/download/4AKE.pdb",
+    "verifica": "adenylate kinase"
+  },
+  {
+    "id": "1ATP",
+    "title": "Proteína quinasa A",
+    "category": "Enzimas",
+    "tags": [
+      "Señalización"
+    ],
+    "description": "Subunidad catalítica de la proteína quinasa dependiente de AMP cíclico, unida a ATP y a un péptido inhibidor.",
+    "url": "https://files.rcsb.org/download/1ATP.pdb",
+    "verifica": "protein kinase"
+  },
+  {
+    "id": "4COX",
+    "title": "Ciclooxigenasa-2 con indometacina",
+    "category": "Enzimas",
+    "tags": [
+      "Fármaco",
+      "Inflamación"
+    ],
+    "description": "La enzima COX-2, que produce mediadores de la inflamación, bloqueada por el antiinflamatorio indometacina.",
+    "url": "https://files.rcsb.org/download/4COX.pdb",
+    "verifica": "cyclooxygenase"
+  },
+  {
+    "id": "1POC",
+    "title": "Fosfolipasa A2 del veneno de abeja",
+    "category": "Enzimas",
+    "tags": [
+      "Veneno"
+    ],
+    "description": "Enzima del veneno de abeja que rompe los lípidos de las membranas celulares.",
+    "url": "https://files.rcsb.org/download/1POC.pdb",
+    "verifica": "phospholipase"
+  },
+  {
+    "id": "1E79",
+    "title": "ATP sintasa (parte F1)",
+    "category": "Enzimas",
+    "tags": [
+      "Energía",
+      "Premio Nobel"
+    ],
+    "description": "La cabeza catalítica de la ATP sintasa bovina, el motor rotatorio que fabrica el ATP. Su mecanismo mereció el Nobel de Química de 1997.",
+    "url": "https://files.rcsb.org/download/1E79.pdb",
+    "verifica": "atpase|atp synthase"
+  },
+  {
+    "id": "1KLN",
+    "title": "ADN polimerasa I (fragmento de Klenow)",
+    "category": "Enzimas",
+    "tags": [
+      "Replicación"
+    ],
+    "description": "Fragmento de la ADN polimerasa I de E. coli unido a ADN; copia hebras de ADN y corrige sus errores.",
+    "url": "https://files.rcsb.org/download/1KLN.pdb",
+    "verifica": "polymerase"
+  },
+  {
+    "id": "1TAU",
+    "title": "Taq polimerasa",
+    "category": "Enzimas",
+    "tags": [
+      "PCR",
+      "Termófila"
+    ],
+    "description": "ADN polimerasa de la bacteria Thermus aquaticus, que resiste el calor; es la enzima de la PCR.",
+    "url": "https://files.rcsb.org/download/1TAU.pdb",
+    "verifica": "polymerase"
+  },
+  {
+    "id": "4OO8",
+    "title": "CRISPR-Cas9",
+    "category": "Enzimas",
+    "tags": [
+      "Edición genética",
+      "Premio Nobel"
+    ],
+    "description": "La nucleasa Cas9 de Streptococcus pyogenes con su ARN guía y un ADN diana. Es la herramienta de edición genética que mereció el Nobel de Química de 2020.",
+    "url": "https://files.rcsb.org/download/4OO8.pdb",
+    "verifica": "cas9"
+  },
+  {
+    "id": "1ASY",
+    "title": "Aspartil-ARNt sintetasa con su ARNt",
+    "category": "Enzimas",
+    "tags": [
+      "Traducción"
+    ],
+    "description": "Enzima de la levadura que carga el aminoácido aspartato en su ARN de transferencia.",
+    "url": "https://files.rcsb.org/download/1ASY.pdb",
+    "verifica": "aspartyl"
+  },
+  {
+    "id": "1QRS",
+    "title": "Glutaminil-ARNt sintetasa con su ARNt",
+    "category": "Enzimas",
+    "tags": [
+      "Traducción"
+    ],
+    "description": "Enzima de E. coli que une la glutamina a su ARN de transferencia.",
+    "url": "https://files.rcsb.org/download/1QRS.pdb",
+    "verifica": "glutaminyl"
+  },
+  {
+    "id": "1BNA",
+    "title": "ADN-B",
+    "category": "ADN/ARN",
+    "tags": [
+      "Doble hélice",
+      "Histórica"
+    ],
+    "description": "Doce pares de bases en la forma B de la doble hélice, la más común en las células. Fue la primera estructura cristalina de una vuelta completa de ADN.",
+    "url": "https://files.rcsb.org/download/1BNA.pdb",
+    "verifica": "b-dna|dna"
+  },
+  {
+    "id": "1EHZ",
+    "title": "ARN de transferencia",
+    "category": "ADN/ARN",
+    "tags": [
+      "Traducción"
+    ],
+    "description": "El ARN de transferencia de la fenilalanina, de levadura, con su característica forma de L.",
+    "url": "https://files.rcsb.org/download/1EHZ.pdb",
+    "verifica": "trna"
+  },
+  {
+    "id": "2GKU",
+    "title": "G-cuádruplex del telómero humano",
+    "category": "ADN/ARN",
+    "tags": [
+      "Telómeros"
+    ],
+    "description": "ADN de los telómeros humanos plegado en un G-cuádruplex: cuatro hebras unidas por planos de guaninas.",
+    "url": "https://files.rcsb.org/download/2GKU.pdb",
+    "verifica": "telomer"
+  },
+  {
+    "id": "4R4V",
+    "title": "Ribozima VS",
+    "category": "ADN/ARN",
+    "tags": [
+      "ARN catalítico"
+    ],
+    "description": "Una ribozima, es decir, un ARN que actúa como enzima, de las mitocondrias del hongo Neurospora.",
+    "url": "https://files.rcsb.org/download/4R4V.pdb",
+    "verifica": "ribozyme"
+  },
+  {
+    "id": "1FFK",
+    "title": "Subunidad grande del ribosoma",
+    "category": "ADN/ARN",
+    "tags": [
+      "Traducción",
+      "Premio Nobel"
+    ],
+    "description": "La subunidad grande del ribosoma de la arquea Haloarcula marismortui, donde se forman los enlaces entre aminoácidos. Su estructura fue parte del Nobel de Química de 2009.",
+    "url": "https://files.rcsb.org/download/1FFK.pdb",
+    "verifica": "ribosom"
+  },
+  {
+    "id": "1LMB",
+    "title": "Represor lambda con su operador",
+    "category": "ADN/ARN",
+    "tags": [
+      "Regulación génica",
+      "Virus bacteriano"
+    ],
+    "description": "Represor del bacteriófago lambda unido al tramo de ADN que regula.",
+    "url": "https://files.rcsb.org/download/1LMB.pdb",
+    "verifica": "lambda"
+  },
+  {
+    "id": "1QPI",
+    "title": "Represor de tetraciclina con su operador",
+    "category": "ADN/ARN",
+    "tags": [
+      "Resistencia a antibióticos"
+    ],
+    "description": "La proteína TetR unida a su operador; controla los genes bacterianos de resistencia a la tetraciclina.",
+    "url": "https://files.rcsb.org/download/1QPI.pdb",
+    "verifica": "tetracycline"
+  },
+  {
+    "id": "1D66",
+    "title": "GAL4 unida al ADN",
+    "category": "ADN/ARN",
+    "tags": [
+      "Levadura",
+      "Factor de transcripción"
+    ],
+    "description": "Factor de transcripción de la levadura que activa los genes del metabolismo de la galactosa.",
+    "url": "https://files.rcsb.org/download/1D66.pdb",
+    "verifica": "gal4"
+  },
+  {
+    "id": "1AAY",
+    "title": "Dedos de zinc de Zif268",
+    "category": "ADN/ARN",
+    "tags": [
+      "Factor de transcripción"
+    ],
+    "description": "Tres dedos de zinc de la proteína Zif268 de ratón leyendo una secuencia de ADN.",
+    "url": "https://files.rcsb.org/download/1AAY.pdb",
+    "verifica": "zinc finger|zif268"
+  },
+  {
+    "id": "1EQZ",
+    "title": "Nucleosoma",
+    "category": "Complejos",
+    "tags": [
+      "Cromatina",
+      "ADN"
+    ],
+    "description": "La unidad básica de la cromatina: unos 146 pares de bases de ADN enrollados alrededor de ocho histonas.",
+    "url": "https://files.rcsb.org/download/1EQZ.pdb",
+    "verifica": "nucleosome"
+  },
+  {
+    "id": "1K4C",
+    "title": "Canal de potasio KcsA",
+    "category": "Canales iónicos",
+    "tags": [
+      "Selectividad",
+      "Premio Nobel"
+    ],
+    "description": "Canal de potasio bacteriano: su filtro deja pasar iones de potasio pero no de sodio. Su estructura mereció el Nobel de Química de 2003 a Roderick MacKinnon.",
+    "url": "https://files.rcsb.org/download/1K4C.pdb",
+    "verifica": "potassium channel"
+  },
+  {
+    "id": "2BG9",
+    "title": "Receptor nicotínico de acetilcolina",
+    "category": "Canales iónicos",
+    "tags": [
+      "Sinapsis"
+    ],
+    "description": "Canal que se abre con la acetilcolina en la unión entre nervio y músculo; esta estructura proviene del órgano eléctrico de la raya Torpedo.",
+    "url": "https://files.rcsb.org/download/2BG9.pdb",
+    "verifica": "acetylcholine"
+  },
+  {
+    "id": "1J4N",
+    "title": "Acuaporina 1",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Agua",
+      "Premio Nobel"
+    ],
+    "description": "Canal que deja pasar agua a través de la membrana. El descubrimiento de las acuaporinas valió el Nobel de Química de 2003 a Peter Agre.",
+    "url": "https://files.rcsb.org/download/1J4N.pdb",
+    "verifica": "aqp1|aquaporin"
+  },
+  {
+    "id": "1C3W",
+    "title": "Bacteriorrodopsina",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Luz",
+      "Arqueas"
+    ],
+    "description": "Bomba de protones impulsada por la luz de una arquea que vive en salinas, con lípidos de su membrana.",
+    "url": "https://files.rcsb.org/download/1C3W.pdb",
+    "verifica": "bacteriorhodopsin"
+  },
+  {
+    "id": "1F88",
+    "title": "Rodopsina",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Visión"
+    ],
+    "description": "El pigmento de la visión de los bastones de la retina, bovino. Fue el primer receptor acoplado a proteínas G cuya estructura se resolvió.",
+    "url": "https://files.rcsb.org/download/1F88.pdb",
+    "verifica": "rhodopsin"
+  },
+  {
+    "id": "3PQR",
+    "title": "Metarrodopsina II",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Visión"
+    ],
+    "description": "La rodopsina en su estado activado por la luz, unida a un fragmento de la proteína G transducina.",
+    "url": "https://files.rcsb.org/download/3PQR.pdb",
+    "verifica": "metarhodopsin"
+  },
+  {
+    "id": "2RH1",
+    "title": "Receptor beta-2 adrenérgico",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Fármaco",
+      "Receptor acoplado a proteínas G"
+    ],
+    "description": "Receptor de la adrenalina en los pulmones y el corazón, diana de los broncodilatadores contra el asma. Su estructura fue parte del Nobel de Química de 2012.",
+    "url": "https://files.rcsb.org/download/2RH1.pdb",
+    "verifica": "adrenergic"
+  },
+  {
+    "id": "2POR",
+    "title": "Porina",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Bacteria"
+    ],
+    "description": "Canal de la membrana externa de una bacteria que deja pasar moléculas pequeñas.",
+    "url": "https://files.rcsb.org/download/2POR.pdb",
+    "verifica": "porin"
+  },
+  {
+    "id": "1JB0",
+    "title": "Fotosistema I",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Fotosíntesis"
+    ],
+    "description": "Complejo que captura la luz en la fotosíntesis, de la cianobacteria Synechococcus elongatus.",
+    "url": "https://files.rcsb.org/download/1JB0.pdb",
+    "verifica": "photosystem i"
+  },
+  {
+    "id": "1PRC",
+    "title": "Centro de reacción fotosintético",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Fotosíntesis",
+      "Premio Nobel"
+    ],
+    "description": "Centro de reacción de una bacteria púrpura. Fue la primera estructura de una proteína de membrana y mereció el Nobel de Química de 1988.",
+    "url": "https://files.rcsb.org/download/1PRC.pdb",
+    "verifica": "reaction center|photosynthetic"
+  },
+  {
+    "id": "1OCC",
+    "title": "Citocromo c oxidasa",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Respiración"
+    ],
+    "description": "El último complejo de la cadena respiratoria de la mitocondria, de corazón bovino: entrega los electrones al oxígeno y forma agua.",
+    "url": "https://files.rcsb.org/download/1OCC.pdb",
+    "verifica": "cytochrome c oxidase"
+  },
+  {
+    "id": "7DDI",
+    "title": "Bomba de sodio y potasio con digitoxina",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Fármaco",
+      "Corazón"
+    ],
+    "description": "La bomba que mantiene los gradientes de sodio y potasio de las células, bloqueada por la digitoxina, un fármaco para el corazón.",
+    "url": "https://files.rcsb.org/download/7DDI.pdb",
+    "verifica": "atpase"
+  },
+  {
+    "id": "7AHL",
+    "title": "Alfa-hemolisina",
+    "category": "Proteínas de membrana",
+    "tags": [
+      "Toxina",
+      "Poro"
+    ],
+    "description": "Toxina de Staphylococcus aureus que forma un poro de siete subunidades en la membrana de las células, que acaban reventando.",
+    "url": "https://files.rcsb.org/download/7AHL.pdb",
+    "verifica": "hemolysin"
+  },
+  {
+    "id": "1CAG",
+    "title": "Péptido tipo colágeno",
+    "category": "Estructurales",
+    "tags": [
+      "Triple hélice"
+    ],
+    "description": "Péptido que reproduce la triple hélice del colágeno, la proteína más abundante del cuerpo.",
+    "url": "https://files.rcsb.org/download/1CAG.pdb",
+    "verifica": "collagen"
+  },
+  {
+    "id": "1J6Z",
+    "title": "Actina",
+    "category": "Estructurales",
+    "tags": [
+      "Citoesqueleto",
+      "Músculo"
+    ],
+    "description": "Actina sola, sin otras proteínas unidas. Sus filamentos sostienen la célula y, junto con la miosina, contraen los músculos.",
+    "url": "https://files.rcsb.org/download/1J6Z.pdb",
+    "verifica": "actin"
+  },
+  {
+    "id": "1TUB",
+    "title": "Tubulina",
+    "category": "Estructurales",
+    "tags": [
+      "Citoesqueleto"
+    ],
+    "description": "Dímero de tubulina alfa y beta, la pieza con la que se construyen los microtúbulos; resuelto por cristalografía electrónica.",
+    "url": "https://files.rcsb.org/download/1TUB.pdb",
+    "verifica": "tubulin"
+  },
+  {
+    "id": "3TNU",
+    "title": "Queratina",
+    "category": "Estructurales",
+    "tags": [
+      "Piel"
+    ],
+    "description": "Fragmento de dos queratinas humanas (la 5 y la 14) enrolladas entre sí, como en los filamentos que dan resistencia a la piel.",
+    "url": "https://files.rcsb.org/download/3TNU.pdb",
+    "verifica": "keratin"
+  },
+  {
+    "id": "3KIN",
+    "title": "Kinesina",
+    "category": "Estructurales",
+    "tags": [
+      "Motor molecular"
+    ],
+    "description": "Motor molecular que camina sobre los microtúbulos transportando carga dentro de la célula; esta es de rata.",
+    "url": "https://files.rcsb.org/download/3KIN.pdb",
+    "verifica": "kinesin"
+  },
+  {
+    "id": "4INS",
+    "title": "Insulina",
+    "category": "Hormonas",
+    "tags": [
+      "Diabetes",
+      "Histórica"
+    ],
+    "description": "Insulina de cerdo en cristales con dos iones de zinc, la forma que estudió Dorothy Hodgkin. Es la hormona que regula la glucosa en la sangre.",
+    "url": "https://files.rcsb.org/download/4INS.pdb",
+    "verifica": "insulin"
+  },
+  {
+    "id": "1GCN",
+    "title": "Glucagón",
+    "category": "Hormonas",
+    "tags": [
+      "Glucosa"
+    ],
+    "description": "Hormona del páncreas que eleva la glucosa en la sangre; actúa en sentido contrario a la insulina.",
+    "url": "https://files.rcsb.org/download/1GCN.pdb",
+    "verifica": "glucagon"
+  },
+  {
+    "id": "3HHR",
+    "title": "Hormona del crecimiento con su receptor",
+    "category": "Hormonas",
+    "tags": [
+      "Crecimiento"
+    ],
+    "description": "La hormona del crecimiento humana unida a dos copias de su receptor.",
+    "url": "https://files.rcsb.org/download/3HHR.pdb",
+    "verifica": "growth hormone"
+  },
+  {
+    "id": "1HRP",
+    "title": "Gonadotropina coriónica humana",
+    "category": "Hormonas",
+    "tags": [
+      "Embarazo"
+    ],
+    "description": "La hormona que fabrica la placenta y que detectan las pruebas de embarazo.",
+    "url": "https://files.rcsb.org/download/1HRP.pdb",
+    "verifica": "gonadotropin"
+  },
+  {
+    "id": "6VSB",
+    "title": "Espiga del SARS-CoV-2",
+    "category": "Virus",
+    "tags": [
+      "COVID-19",
+      "Glicoproteína"
+    ],
+    "description": "La proteína de la espiga del coronavirus de la COVID-19, con la que entra en las células, en la conformación previa a la fusión.",
+    "url": "https://files.rcsb.org/download/6VSB.pdb",
+    "verifica": "spike"
+  },
+  {
+    "id": "6LU7",
+    "title": "Proteasa principal del SARS-CoV-2",
+    "category": "Virus",
+    "tags": [
+      "COVID-19",
+      "Fármaco"
+    ],
+    "description": "La proteasa principal del coronavirus de la COVID-19, unida al inhibidor N3.",
+    "url": "https://files.rcsb.org/download/6LU7.pdb",
+    "verifica": "protease"
+  },
+  {
+    "id": "3OXC",
+    "title": "Proteasa del VIH-1 con saquinavir",
+    "category": "Virus",
+    "tags": [
+      "VIH",
+      "Fármaco"
+    ],
+    "description": "La proteasa del VIH-1, imprescindible para que el virus madure, bloqueada por el antirretroviral saquinavir.",
+    "url": "https://files.rcsb.org/download/3OXC.pdb",
+    "verifica": "protease"
+  },
+  {
+    "id": "1RU7",
+    "title": "Hemaglutinina H1 de la gripe",
+    "category": "Virus",
+    "tags": [
+      "Gripe"
+    ],
+    "description": "La hemaglutinina de un virus de la gripe H1 humano de 1934, la proteína con la que el virus se une a las células.",
+    "url": "https://files.rcsb.org/download/1RU7.pdb",
+    "verifica": "hemagglutinin|haemagglutinin"
+  },
+  {
+    "id": "1A34",
+    "title": "Virus satélite del mosaico del tabaco",
+    "category": "Virus",
+    "tags": [
+      "Plantas",
+      "ARN"
+    ],
+    "description": "Un virus diminuto que solo puede replicarse con ayuda del virus del mosaico del tabaco; aquí, con su ARN dentro.",
+    "url": "https://files.rcsb.org/download/1A34.pdb",
+    "verifica": "satellite tobacco mosaic"
+  },
+  {
+    "id": "1BVP",
+    "title": "Proteína VP7 del virus de la lengua azul",
+    "category": "Virus",
+    "tags": [
+      "Ganado"
+    ],
+    "description": "Proteína de la cápside del virus de la lengua azul, que afecta sobre todo a las ovejas.",
+    "url": "https://files.rcsb.org/download/1BVP.pdb",
+    "verifica": "bluetongue"
+  }
+]

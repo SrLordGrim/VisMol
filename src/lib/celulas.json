@@ -296,5 +296,229 @@
         "color": "#4ade80"
       }
     ]
+  },
+  {
+    "id": "3DPX-017844",
+    "titulo": "Polen de pino silvestre",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Tiene dos sacos de aire que lo ayudan a viajar lejos con el viento: el pino se poliniza por el viento.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 669590,
+        "color": "#fde68a"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017880",
+    "titulo": "Polen de girasol",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Está cubierto de espinas cortas, típicas de la familia de las margaritas; ayudan a que el polen se adhiera a los insectos que lo transportan.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 668748,
+        "color": "#facc15"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017879",
+    "titulo": "Polen de calabaza",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Es uno de los granos de polen más grandes y está cubierto de espinas; lo transportan las abejas.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 668388,
+        "color": "#fb923c"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017782",
+    "titulo": "Polen de lirio dorado",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Es alargado y tiene una sola abertura en forma de surco, un rasgo propio de muchas monocotiledóneas, el grupo de los lirios y las gramíneas.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 668930,
+        "color": "#f9a8d4"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017886",
+    "titulo": "Polen de trigo",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Como el de otras gramíneas, es casi esférico y tiene un único poro. El trigo se poliniza a sí mismo en su mayor parte.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 787883,
+        "color": "#fcd34d"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017830",
+    "titulo": "Polen de roble común",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. El roble se poliniza por el viento, y su polen es una de las causas de alergia en primavera.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 787762,
+        "color": "#a3e635"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-022945",
+    "titulo": "Polen de abedul",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Tiene tres poros. El polen de abedul es una de las principales causas de alergia en el norte de Europa.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff) y Heather Pardoe (Museo Nacional de Gales)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 766469,
+        "color": "#d9f99d"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017842",
+    "titulo": "Polen de avellano",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Tiene tres poros. El avellano florece a finales del invierno y es de los primeros árboles en soltar polen al aire.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 668400,
+        "color": "#fde047"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-020734",
+    "titulo": "Polen de ortiga",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Es pequeño y tiene varios poros. La ortiga lo lanza al aire de forma explosiva cuando se abren sus estambres.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff) y Heather Pardoe (Museo Nacional de Gales)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 670492,
+        "color": "#86efac"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017899",
+    "titulo": "Polen de manzano",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. Tiene tres surcos con un poro cada uno; lo transportan sobre todo las abejas.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 668978,
+        "color": "#fecaca"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017798",
+    "titulo": "Polen de tomate",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Grano de polen reconstruido en 3D a partir de imágenes de microscopio. La flor del tomate suelta su polen cuando los abejorros la hacen vibrar con el zumbido de sus alas, la llamada polinización por zumbido.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 781318,
+        "color": "#fca5a5"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-017846",
+    "titulo": "Espora de helecho",
+    "categoria": "Polen y esporas",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "Espora de polipodio común reconstruida en 3D a partir de imágenes de microscopio. Los helechos no producen polen: se reproducen mediante esporas.",
+    "autor": "Anthony J. Hayes (Universidad de Cardiff)",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 787751,
+        "color": "#bbf7d0"
+      }
+    ]
+  },
+  {
+    "id": "3DPX-007404",
+    "titulo": "Flagelo bacteriano",
+    "categoria": "Orgánulos y estructuras",
+    "tipo": "Reconstrucción con datos reales",
+    "descripcion": "El flagelo completo de Salmonella typhimurium: un motor rotatorio anclado en la envoltura de la bacteria que hace girar un filamento largo, con el que nada. Estructura publicada por David DeRosier en Current Biology (2006).",
+    "autor": "munfred",
+    "licencia": "CC-BY-NC",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 186135,
+        "color": null
+      }
+    ]
+  },
+  {
+    "id": "3DPX-015797",
+    "titulo": "Célula animal",
+    "categoria": "Células humanas y animales",
+    "tipo": "Modelo didáctico",
+    "descripcion": "Modelo didáctico de una célula animal, la célula eucariota típica: una membrana plasmática que encierra el citoplasma con sus orgánulos y un núcleo rodeado de membrana.",
+    "autor": "destacados tv",
+    "licencia": "CC-BY-NC-SA",
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 458228,
+        "color": "#f9a8d4"
+      }
+    ]
   }
 ]

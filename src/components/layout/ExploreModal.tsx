@@ -215,7 +215,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, onSel
                     <div className="p-6 shrink-0">
                         <h2 className="text-xl font-bold flex items-center gap-2 tracking-tight">
                             <FlaskConical className="text-emerald-500" size={20} />
-                            Explore
+                            Explorar
                         </h2>
                     </div>
 
@@ -252,7 +252,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, onSel
                         <div className="flex items-center gap-3">
                             <h2 className="text-lg font-bold flex items-center gap-2 tracking-tight">
                                 <FlaskConical className="text-emerald-500" size={20} />
-                                Explore
+                                Explorar
                             </h2>
                             <button onClick={onClose} className={`ml-auto p-2 rounded-full transition-colors ${isDark ? 'hover:bg-neutral-800' : 'hover:bg-neutral-100'}`}>
                                 <X size={18} />

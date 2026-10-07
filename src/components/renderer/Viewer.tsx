@@ -108,7 +108,9 @@ export const Viewer: React.FC<Props> = ({ structure, celula = null, viewState, a
 
                 {/* Arriba a la izquierda: célula de NIH 3D, con su crédito siempre visible */}
                 {celula && (
-                    <div className={`absolute ${isMobileOrTablet ? 'top-2 left-2 right-2' : 'top-6 left-6'} max-w-lg animate-fade-in pointer-events-auto`}>
+                    // Fondo translúcido: los modelos se centran en el lienzo y en pantallas
+                    // bajas quedaban encima del crédito, que se volvía ilegible.
+                    <div className={`absolute ${isMobileOrTablet ? 'top-2 left-2 right-24 p-2' : 'top-6 left-6 p-4'} max-w-lg animate-fade-in pointer-events-auto rounded-xl backdrop-blur-sm ${isDark ? 'bg-[#09090b]/60' : 'bg-white/60'}`}>
                         <span className={`text-[10px] uppercase tracking-widest ${isDark ? 'text-emerald-400' : 'text-emerald-700'}`}>
                             {celula.categoria} · {celula.tipo}
                         </span>
@@ -133,10 +135,10 @@ export const Viewer: React.FC<Props> = ({ structure, celula = null, viewState, a
 
                 {/* Top Left: Molecule Title & Description */}
                 {structure?.metadata && (
-                    <div className={`absolute ${isMobileOrTablet ? 'top-2 left-2 right-2' : 'top-6 left-6'} max-w-lg animate-fade-in pointer-events-auto`}>
+                    <div className={`absolute ${isMobileOrTablet ? 'top-2 left-2 right-24' : 'top-6 left-6'} max-w-lg animate-fade-in pointer-events-auto`}>
                         <div className="flex items-center gap-3 mb-2">
                             <h1 className={`${isMobileOrTablet ? 'text-xl' : 'text-4xl'} font-extrabold tracking-tight leading-none ${isDark ? 'text-white' : 'text-neutral-900'}`}>
-                                {structure.metadata.title || 'Unknown Structure'}
+                                {structure.metadata.title || 'Estructura sin nombre'}
                             </h1>
                         </div>
 
@@ -148,7 +150,7 @@ export const Viewer: React.FC<Props> = ({ structure, celula = null, viewState, a
 
                         <div className="flex gap-2 mt-3">
                             <span className={`text-xs ${isDark ? 'text-neutral-500' : 'text-neutral-600'}`}>
-                                {structure.atoms.length.toLocaleString()} atoms
+                                {structure.atoms.length.toLocaleString('es')} átomos
                             </span>
                         </div>
                     </div>
@@ -170,7 +172,8 @@ export const Viewer: React.FC<Props> = ({ structure, celula = null, viewState, a
             </div>
 
             <Canvas shadows dpr={[1, 2]} gl={{ preserveDrawingBuffer: true, antialias: true }}>
-                <Stats className="!left-auto !right-0 !top-auto !bottom-0 opacity-50 hover:opacity-100 transition-opacity" />
+                {/* Medidor de FPS: solo en desarrollo, no en el sitio público. */}
+                {import.meta.env.DEV && <Stats className="!left-auto !right-0 !top-auto !bottom-0 opacity-50 hover:opacity-100 transition-opacity" />}
 
                 <color attach="background" args={[bgColor]} />
 
@@ -204,7 +207,7 @@ export const Viewer: React.FC<Props> = ({ structure, celula = null, viewState, a
                     </group>
                 )}
 
-                <Suspense fallback={<Html center><div className={isDark ? "text-neutral-400 font-mono text-sm" : "text-neutral-600 font-mono text-sm"}>Building Geometry...</div></Html>}>
+                <Suspense fallback={<Html center><div className={isDark ? "text-neutral-400 font-mono text-sm" : "text-neutral-600 font-mono text-sm"}>Construyendo la geometría…</div></Html>}>
                     {structure && (
                         <>
                             <MoleculeRender

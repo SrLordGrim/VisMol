@@ -38,7 +38,7 @@ export const loadStructureById = async (id: string): Promise<{ structure: Struct
             const text = await response.text();
             
             if (!text || text.trim().length === 0) {
-                errors.push(`${formatInfo.ext.toUpperCase()}: Empty response`);
+                errors.push(`${formatInfo.ext.toUpperCase()}: respuesta vacía`);
                 continue; // Try next format
             }
             
@@ -49,13 +49,13 @@ export const loadStructureById = async (id: string): Promise<{ structure: Struct
             return { structure, format: formatInfo.ext, filename };
         } catch (error: any) {
             // Network errors or parsing errors
-            errors.push(`${formatInfo.ext.toUpperCase()}: ${error.message || 'Unknown error'}`);
+            errors.push(`${formatInfo.ext.toUpperCase()}: ${error.message || 'error desconocido'}`);
             continue; // Try next format
         }
     }
     
     // All formats failed
-    throw new Error(`Could not load structure ${id} in any supported format. Errors: ${errors.join('; ')}`);
+    throw new Error(`No se pudo cargar la estructura ${id} en ningún formato compatible. Errores: ${errors.join('; ')}`);
 };
 
 // Detect file format from filename or content
@@ -99,13 +99,13 @@ export const parseStructureFile = (content: string, filename: string): Structure
             return parseGRO(content);
         case 'mmtf':
             // MMTF is binary, would need a library like mmtf-js
-            throw new Error('MMTF format not yet supported. Please convert to PDB or mmCIF.');
+            throw new Error('El formato MMTF todavía no es compatible. Conviértelo a PDB o mmCIF.');
         case 'trajectory':
             // Trajectory files need special handling
-            throw new Error('Trajectory formats (XTC/TRR/DCD) not yet supported. Please load the structure file (GRO/PDB) separately.');
+            throw new Error('Los formatos de trayectoria (XTC/TRR/DCD) todavía no son compatibles. Carga por separado el archivo de estructura (GRO/PDB).');
         case 'map':
             // Cryo-EM maps need special handling
-            throw new Error('Map formats (MRC/CCP4) not yet supported. Please load the structure file separately.');
+            throw new Error('Los mapas (MRC/CCP4) todavía no son compatibles. Carga por separado el archivo de estructura.');
         default:
             // Try PDB as fallback
             return parsePDB(content);

@@ -3,9 +3,13 @@ import {} from 'react';
 
 import { ViewerState, Structure, RenderStyle, AnimationMode } from '@/lib/types';
 import { Select } from '@/components/ui';
+import { fechaEs, metodoEs } from '@/lib/formato';
+import { Celula, urlLicencia, urlNih } from '@/lib/celulas';
 
 interface Props {
     structure: Structure | null;
+    /** Célula de NIH 3D cargada, si la hay: la ficha muestra sus datos y su crédito. */
+    celula?: Celula | null;
     viewState: ViewerState;
     setViewState: React.Dispatch<React.SetStateAction<ViewerState>>;
     isOpen?: boolean;
@@ -13,7 +17,7 @@ interface Props {
     isMobile?: boolean;
 }
 
-export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, isOpen = true, onClose, isMobile = false }) => {
+export const Sidebar: React.FC<Props> = ({ structure, celula = null, viewState, setViewState, isOpen = true, onClose, isMobile = false }) => {
     const isDark = viewState.isDarkMode;
 
 
@@ -23,10 +27,10 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
             // Save to localStorage
             if (key === 'playTrajectory' || key === 'showStars') {
                 try {
-                    const current = localStorage.getItem('biovis_preferences');
+                    const current = localStorage.getItem('vismol_preferencias');
                     const prefs = current ? JSON.parse(current) : {};
                     prefs[key] = newState[key];
-                    localStorage.setItem('biovis_preferences', JSON.stringify(prefs));
+                    localStorage.setItem('vismol_preferencias', JSON.stringify(prefs));
                 } catch (e) {
                     console.error("Failed to save preference", e);
                 }
@@ -39,10 +43,10 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
         setViewState(prev => {
             const newState = { ...prev, renderStyle: style };
             try {
-                const current = localStorage.getItem('biovis_preferences');
+                const current = localStorage.getItem('vismol_preferencias');
                 const prefs = current ? JSON.parse(current) : {};
                 prefs.renderStyle = style;
-                localStorage.setItem('biovis_preferences', JSON.stringify(prefs));
+                localStorage.setItem('vismol_preferencias', JSON.stringify(prefs));
             } catch (e) {
                 console.error("Failed to save preference", e);
             }
@@ -54,10 +58,10 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
         setViewState(prev => {
             const newState = { ...prev, animationMode: mode };
             try {
-                const current = localStorage.getItem('biovis_preferences');
+                const current = localStorage.getItem('vismol_preferencias');
                 const prefs = current ? JSON.parse(current) : {};
                 prefs.animationMode = mode;
-                localStorage.setItem('biovis_preferences', JSON.stringify(prefs));
+                localStorage.setItem('vismol_preferencias', JSON.stringify(prefs));
             } catch (e) {
                 console.error("Failed to save preference", e);
             }
@@ -240,9 +244,34 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                 {/* Molecule Details Card */}
                 <div className="space-y-4">
     <h2 className={`text-xs font-bold uppercase tracking-wider mb-2 flex items-center gap-2 ${sectionTitleClass}`}>
-        <FileText size={12} /> Detalles de la molécula
+        <FileText size={12} /> {celula ? 'Detalles de la célula' : 'Detalles de la molécula'}
     </h2>
-                    {structure?.metadata ? (
+                    {celula ? (
+                        <div className={`p-4 rounded-xl border text-xs leading-relaxed space-y-3 ${isDark ? 'bg-neutral-900/30 border-neutral-800 text-neutral-300' : 'bg-neutral-50/80 border-neutral-200 text-neutral-800'}`}>
+                            <div className="flex justify-between gap-2">
+                                <span className="opacity-50">Código NIH 3D</span>
+                                <span className="font-mono">{celula.id}</span>
+                            </div>
+                            <div>
+                                <span className="opacity-50 block mb-1">Nombre</span>
+                                <span className="font-medium">{celula.titulo}</span>
+                            </div>
+                            <div className="pt-2 border-t border-dashed border-opacity-10 border-current space-y-2">
+                                <div className="flex justify-between gap-2"><span className="opacity-50">Categoría</span><span className="text-right">{celula.categoria}</span></div>
+                                <div className="flex justify-between gap-2"><span className="opacity-50">Tipo</span><span className="text-right">{celula.tipo}</span></div>
+                                <div className="flex justify-between gap-2"><span className="opacity-50">Autor</span><span className="text-right">{celula.autor ?? 'no indicado'}</span></div>
+                                <div className="flex justify-between gap-2">
+                                    <span className="opacity-50">Licencia</span>
+                                    {urlLicencia(celula)
+                                        ? <a href={urlLicencia(celula)!} target="_blank" rel="noopener" className="underline hover:text-emerald-500">{celula.licencia}</a>
+                                        : <span>{celula.licencia}</span>}
+                                </div>
+                            </div>
+                            <a href={urlNih(celula)} target="_blank" rel="noopener" className="block pt-2 border-t border-dashed border-opacity-10 border-current text-emerald-500 hover:underline">
+                                Ver el modelo original en NIH 3D
+                            </a>
+                        </div>
+                    ) : structure?.metadata ? (
                         <div className={`p-4 rounded-xl border text-xs leading-relaxed space-y-4 ${isDark ? 'bg-neutral-900/30 border-neutral-800' : 'bg-neutral-50/80 border-neutral-200 text-neutral-800'}`}>
                             {/* ID and Category */}
                             <div className="flex items-start justify-between">
@@ -271,7 +300,7 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                             {/* Tags */}
                             {structure.metadata.tags && structure.metadata.tags.length > 0 && (
                                 <div className="pt-2 border-t border-dashed border-opacity-10 border-current">
-                                    <span className="opacity-50 block mb-2 flex items-center gap-1"><Tag size={10} /> Tags</span>
+                                    <span className="opacity-50 block mb-2 flex items-center gap-1"><Tag size={10} /> Etiquetas</span>
                                     <div className="flex flex-wrap gap-1.5">
                                         {structure.metadata.tags.map(tag => (
                                             <span key={tag} className={`px-1.5 py-0.5 rounded-[4px] text-[10px] uppercase font-bold tracking-wide ${isDark ? 'bg-neutral-800 text-neutral-400' : 'bg-neutral-200 text-neutral-700'}`}>
@@ -293,13 +322,13 @@ export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, i
                                 {structure.metadata.depositionDate && (
                                     <div className="flex justify-between items-center">
                                         <span className="opacity-50">Fecha</span>
-                                        <span className="font-mono">{structure.metadata.depositionDate}</span>
+                                        <span className="font-mono">{fechaEs(structure.metadata.depositionDate)}</span>
                                     </div>
                                 )}
                                 {structure.metadata.experimentMethod && (
                                     <div className="block pt-1">
                                         <span className="opacity-50 block mb-1">Método</span>
-                                        <span className="font-medium opacity-80">{structure.metadata.experimentMethod}</span>
+                                        <span className="font-medium opacity-80">{metodoEs(structure.metadata.experimentMethod)}</span>
                                     </div>
                                 )}
                             </div>

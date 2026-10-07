@@ -18,7 +18,7 @@ export interface Celula {
     descripcion: string;
     /** null cuando NIH 3D no declara autor: se acredita la entrada de NIH 3D. */
     autor: string | null;
-    licencia: 'CC-BY' | 'CC-BY-SA' | 'Dominio público';
+    licencia: 'CC-BY' | 'CC-BY-SA' | 'CC-BY-NC' | 'CC-BY-NC-SA' | 'Dominio público';
     piezas: PiezaCelula[];
 }
 
@@ -29,6 +29,8 @@ export const CATEGORIA_CELULAS = 'Células (NIH 3D)';
 const LICENCIAS: Record<Celula['licencia'], string | null> = {
     'CC-BY': 'https://creativecommons.org/licenses/by/4.0/deed.es',
     'CC-BY-SA': 'https://creativecommons.org/licenses/by-sa/4.0/deed.es',
+    'CC-BY-NC': 'https://creativecommons.org/licenses/by-nc/4.0/deed.es',
+    'CC-BY-NC-SA': 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es',
     'Dominio público': null,
 };
 

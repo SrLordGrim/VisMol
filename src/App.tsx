@@ -1,5 +1,5 @@
 import { useState, useCallback, useTransition, useEffect, useRef } from 'react';
-import { RotateCcw, Camera, Search, Upload, History, Clock, Loader2, Heart } from 'lucide-react';
+import { RotateCcw, Camera, Search, Upload, History, Clock, Loader2 } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 
 import { Sidebar } from './components/layout/Sidebar';
@@ -51,7 +51,7 @@ function App() {
     // Load user preferences from localStorage
     const loadPreferences = (): Partial<ViewerState> => {
         try {
-            const saved = localStorage.getItem('biovis_preferences');
+            const saved = localStorage.getItem('vismol_preferencias');
             if (saved) {
                 const prefs = JSON.parse(saved);
                 return {
@@ -75,10 +75,10 @@ function App() {
     // Save preferences to localStorage
     const savePreferences = (updates: Partial<ViewerState>) => {
         try {
-            const current = localStorage.getItem('biovis_preferences');
+            const current = localStorage.getItem('vismol_preferencias');
             const prefs = current ? JSON.parse(current) : {};
             const newPrefs = { ...prefs, ...updates };
-            localStorage.setItem('biovis_preferences', JSON.stringify(newPrefs));
+            localStorage.setItem('vismol_preferencias', JSON.stringify(newPrefs));
         } catch (e) {
             console.error("Failed to save preferences", e);
         }
@@ -87,7 +87,7 @@ function App() {
     // Initial load of history and preferences
     useEffect(() => {
         try {
-            const saved = localStorage.getItem('biovis_history');
+            const saved = localStorage.getItem('vismol_historial');
             if (saved) {
                 setHistory(JSON.parse(saved));
             }
@@ -114,7 +114,7 @@ function App() {
             const filtered = prev.filter(h => h.id !== item.id);
             const newHistory = [item, ...filtered].slice(0, 20);
             try {
-                localStorage.setItem('biovis_history', JSON.stringify(newHistory));
+                localStorage.setItem('vismol_historial', JSON.stringify(newHistory));
             } catch (e) { console.error(e); }
             return newHistory;
         });
@@ -216,7 +216,7 @@ function App() {
             } else {
                 // Use original URL (for non-RCSB sources)
                 const response = await fetch(item.url);
-                if (!response.ok) throw new Error("Failed to fetch structure");
+                if (!response.ok) throw new Error("No se pudo descargar la estructura.");
                 const text = await response.text();
 
                 // Pass gallery item details as metadata overrides
@@ -296,7 +296,7 @@ function App() {
 
     const handleScreenshotCapture = (dataUrl: string) => {
         const link = document.createElement('a');
-        link.setAttribute('download', `biovis_snapshot_${Date.now()}.png`);
+        link.setAttribute('download', `vismol_captura_${Date.now()}.png`);
         link.setAttribute('href', dataUrl);
         link.click();
     };
@@ -326,13 +326,14 @@ function App() {
         >
             {/* Desktop Sidebar */}
             {!isMobileOrTablet && (
-                <Sidebar structure={structure} viewState={viewState} setViewState={setViewState} />
+                <Sidebar structure={structure} celula={celula} viewState={viewState} setViewState={setViewState} />
             )}
 
             {/* Mobile/Tablet Sidebar Drawer */}
             {isMobileOrTablet && (
                 <Sidebar
                     structure={structure}
+                    celula={celula}
                     viewState={viewState}
                     setViewState={setViewState}
                     isOpen={isSidebarOpen}
@@ -422,19 +423,6 @@ function App() {
                                 )}
                             </div>
 
-                            <a
-    href="https://www.patreon.com/kevinzhul"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-        isDark
-            ? 'bg-[#1a1328] hover:bg-[#24183a] text-fuchsia-200 border border-fuchsia-800/50'
-            : 'bg-fuchsia-50 hover:bg-fuchsia-100 text-fuchsia-700 border border-fuchsia-200'
-    }`}
->
-    <Heart size={16} />
-    <span>Patreon</span>
-</a>
 
 <Button
     onClick={() => setIsExploreOpen(true)}
