@@ -458,7 +458,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1OPD",
         title: "Oxy-myoglobin",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Oxygen-bound", "Muscle", "Heme", "Ligand Complex"],
         description: "Sperm whale myoglobin with bound oxygen, showing how oxygen binds to heme iron.",
         url: "https://files.rcsb.org/download/1OPD.pdb"
@@ -466,7 +466,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1QPI",
         title: "Cytochrome c",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Electron Transport", "Mitochondrial", "Heme", "Evolutionary"],
         description: "Mitochondrial cytochrome c, involved in electron transport chain and apoptosis.",
         url: "https://files.rcsb.org/download/1QPI.pdb"
@@ -474,7 +474,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1MBO",
         title: "Myoglobin Mutant",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Mutant", "Heme", "Protein Engineering"],
         description: "Site-directed mutant of myoglobin, used in protein engineering studies.",
         url: "https://files.rcsb.org/download/1MBO.pdb"
@@ -482,7 +482,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "2POR",
         title: "Porin",
-        category: "Membrane Proteins",
+        category: 'Proteínas de membrana',
         tags: ["Beta Barrel", "Outer Membrane", "Bacterial", "Transport"],
         description: "Bacterial porin from Rhodobacter capsulatus, beta-barrel membrane protein.",
         url: "https://files.rcsb.org/download/2POR.pdb"
@@ -490,7 +490,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PRC",
         title: "C-phycocyanin",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Photosynthetic", "Algal", "Light-harvesting", "Bilin"],
         description: "Light-harvesting phycobiliprotein from cyanobacteria, contains bilin chromophores.",
         url: "https://files.rcsb.org/download/1PRC.pdb"
@@ -498,7 +498,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1BVP",
         title: "Bacteriochlorophyll Protein",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Photosynthetic", "Bacterial", "Chlorophyll", "Antenna"],
         description: "Bacteriochlorophyll a-protein from green sulfur bacteria, light-harvesting complex.",
         url: "https://files.rcsb.org/download/1BVP.pdb"
@@ -506,7 +506,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1RCF",
         title: "Reaction Center",
-        category: "Membrane Proteins",
+        category: 'Proteínas de membrana',
         tags: ["Photosynthetic", "Membrane", "Electron Transfer", "Bacterial"],
         description: "Photosynthetic reaction center from Rhodobacter sphaeroides.",
         url: "https://files.rcsb.org/download/1RCF.pdb"
@@ -514,7 +514,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PS1",
         title: "Photosystem I",
-        category: "Membrane Proteins",
+        category: 'Proteínas de membrana',
         tags: ["Photosynthetic", "Plant", "Membrane Complex", "Chlorophyll"],
         description: "Photosystem I from pea plants, large membrane protein complex.",
         url: "https://files.rcsb.org/download/1PS1.pdb"
@@ -522,7 +522,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1JB0",
         title: "Photosystem II",
-        category: "Membrane Proteins",
+        category: 'Proteínas de membrana',
         tags: ["Oxygen Evolving", "Manganese Cluster", "Photosynthetic"],
         description: "Photosystem II from thermophilic cyanobacteria, contains oxygen-evolving complex.",
         url: "https://files.rcsb.org/download/1JB0.pdb"
@@ -530,7 +530,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1D66",
         title: "DNA Helicase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["DNA Unwinding", "ATPase", "Replication", "Motor Protein"],
         description: "Bacteriophage T7 DNA helicase, unwinds DNA double helix during replication.",
         url: "https://files.rcsb.org/download/1D66.pdb"
@@ -538,7 +538,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1QRS",
         title: "QR1",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Quinone", "Oxidoreductase", "Metabolic"],
         description: "Quinone oxidoreductase, involved in detoxification and metabolic processes.",
         url: "https://files.rcsb.org/download/1QRS.pdb"
@@ -546,7 +546,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1DXG",
         title: "Xylanase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Hydrolase", "Plant Cell Wall"],
         description: "Endo-1,4-beta-xylanase, breaks down xylan in plant cell walls.",
         url: "https://files.rcsb.org/download/1DXG.pdb"
@@ -554,7 +554,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1HWG",
         title: "HIV-1 Reverse Transcriptase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Retroviral", "RNA-dependent DNA polymerase", "Drug Target"],
         description: "HIV-1 reverse transcriptase complexed with DNA and inhibitor.",
         url: "https://files.rcsb.org/download/1HWG.pdb"
@@ -562,7 +562,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1ESY",
         title: "Elastase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Serine Protease", "Connective Tissue", "Digestive"],
         description: "Pancreatic elastase, breaks down elastin in connective tissue.",
         url: "https://files.rcsb.org/download/1ESY.pdb"
@@ -570,7 +570,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1SGT",
         title: "Serine Hydroxymethyltransferase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["One-carbon Metabolism", "Pyridoxal Phosphate", "Amino Acid"],
         description: "Serine hydroxymethyltransferase, pyridoxal phosphate-dependent enzyme.",
         url: "https://files.rcsb.org/download/1SGT.pdb"
@@ -578,7 +578,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1B8E",
         title: "Beta-lactamase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Antibiotic Resistance", "Bacterial", "Drug Target"],
         description: "TEM-1 beta-lactamase, confers resistance to penicillin antibiotics.",
         url: "https://files.rcsb.org/download/1B8E.pdb"
@@ -586,7 +586,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1NBT",
         title: "Nitrogenase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Nitrogen Fixation", "Iron-Molybdenum", "Bacterial"],
         description: "Nitrogenase MoFe protein, converts atmospheric nitrogen to ammonia.",
         url: "https://files.rcsb.org/download/1NBT.pdb"
@@ -594,7 +594,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "7AHL",
         title: "Alcohol Dehydrogenase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Zinc-dependent", "Oxidoreductase", "Ethanol Metabolism"],
         description: "Horse liver alcohol dehydrogenase, zinc-containing enzyme.",
         url: "https://files.rcsb.org/download/7AHL.pdb"
@@ -602,7 +602,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1LDM",
         title: "Lactate Dehydrogenase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Glycolysis", "Oxidoreductase", "NAD-binding"],
         description: "Dogfish M4 lactate dehydrogenase, important in anaerobic metabolism.",
         url: "https://files.rcsb.org/download/1LDM.pdb"
@@ -610,7 +610,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1GD1",
         title: "Glyceraldehyde-3-phosphate Dehydrogenase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Glycolysis", "Oxidoreductase", "Key Metabolic"],
         description: "GAPDH from Bacillus stearothermophilus, key glycolytic enzyme.",
         url: "https://files.rcsb.org/download/1GD1.pdb"
@@ -618,7 +618,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PYP",
         title: "Pyrophosphatase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Inorganic", "Hydrolysis", "Metabolic"],
         description: "Inorganic pyrophosphatase, hydrolyzes pyrophosphate to phosphate.",
         url: "https://files.rcsb.org/download/1PYP.pdb"
@@ -626,7 +626,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1KPB",
         title: "Kinesin",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Motor Protein", "Microtubule", "ATPase", "Intracellular Transport"],
         description: "Kinesin motor domain, walks along microtubules transporting cargo.",
         url: "https://files.rcsb.org/download/1KPB.pdb"
@@ -634,7 +634,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1WDC",
         title: "Dynein",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Motor Protein", "Microtubule", "AAA+ ATPase"],
         description: "Cytoplasmic dynein motor domain, minus-end directed microtubule motor.",
         url: "https://files.rcsb.org/download/1WDC.pdb"
@@ -642,7 +642,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1F4W",
         title: "Fibrinogen",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Blood Clotting", "Coiled-coil", "Circulatory"],
         description: "Human fibrinogen, essential for blood clot formation.",
         url: "https://files.rcsb.org/download/1F4W.pdb"
@@ -650,7 +650,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1CVU",
         title: "Cysteine Protease Inhibitor",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Protease Inhibitor", "Cystatin", "Regulatory"],
         description: "Cystatin, inhibitor of cysteine proteases like papain.",
         url: "https://files.rcsb.org/download/1CVU.pdb"
@@ -658,7 +658,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1THB",
         title: "Thioredoxin",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Redox", "Small", "Disulfide Reductase"],
         description: "E. coli thioredoxin, small redox protein with CXXC active site.",
         url: "https://files.rcsb.org/download/1THB.pdb"
@@ -666,7 +666,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1GTR",
         title: "Glutathione Reductase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Redox", "NADPH", "Antioxidant"],
         description: "Human glutathione reductase, maintains glutathione in reduced state.",
         url: "https://files.rcsb.org/download/1GTR.pdb"
@@ -674,7 +674,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1F1C",
         title: "Ferredoxin",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Iron-Sulfur", "Electron Transfer", "Small"],
         description: "Plant-type ferredoxin, [2Fe-2S] iron-sulfur electron transfer protein.",
         url: "https://files.rcsb.org/download/1F1C.pdb"
@@ -682,7 +682,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1CPQ",
         title: "Copper, Zinc Superoxide Dismutase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Antioxidant", "Metalloenzyme", "Superoxide"],
         description: "Cu,Zn superoxide dismutase, converts superoxide to hydrogen peroxide.",
         url: "https://files.rcsb.org/download/1CPQ.pdb"
@@ -690,7 +690,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1JFB",
         title: "Iron Superoxide Dismutase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Antioxidant", "Iron", "Bacterial"],
         description: "Fe superoxide dismutase from E. coli, bacterial antioxidant enzyme.",
         url: "https://files.rcsb.org/download/1JFB.pdb"
@@ -698,7 +698,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1ARB",
         title: "Adenylate Kinase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Nucleotide", "Phosphotransferase", "Energy Metabolism"],
         description: "Adenylate kinase, interconverts ATP, ADP and AMP.",
         url: "https://files.rcsb.org/download/1ARB.pdb"
@@ -706,7 +706,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1KSD",
         title: "Adenylate Kinase with substrate",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Enzyme-Substrate", "Nucleotide", "Conformational Change"],
         description: "Adenylate kinase complexed with substrate analogs.",
         url: "https://files.rcsb.org/download/1KSD.pdb"
@@ -714,7 +714,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PGA",
         title: "Phosphoglycerate Kinase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Glycolysis", "ATP-generating", "Two-domain"],
         description: "Phosphoglycerate kinase, ATP-generating step in glycolysis.",
         url: "https://files.rcsb.org/download/1PGA.pdb"
@@ -722,7 +722,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1YPI",
         title: "Triose Phosphate Isomerase with inhibitor",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["TIM Barrel", "Glycolysis", "Transition State Analog"],
         description: "Triose phosphate isomerase complexed with transition state analog.",
         url: "https://files.rcsb.org/download/1YPI.pdb"
@@ -730,7 +730,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1HNE",
         title: "Neuraminidase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Influenza", "Viral", "Glycosidase", "Drug Target"],
         description: "Influenza virus neuraminidase, target of antiviral drugs like oseltamivir.",
         url: "https://files.rcsb.org/download/1HNE.pdb"
@@ -738,7 +738,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1AAY",
         title: "Alpha-amylase Inhibitor",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Enzyme Inhibitor", "Plant", "Carbohydrate"],
         description: "Alpha-amylase inhibitor from bean, inhibits mammalian alpha-amylases.",
         url: "https://files.rcsb.org/download/1AAY.pdb"
@@ -746,7 +746,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1TIE",
         title: "Trypsin Inhibitor",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Protease Inhibitor", "Small", "Standard"],
         description: "Bovine pancreatic trypsin inhibitor, standard for protein folding studies.",
         url: "https://files.rcsb.org/download/1TIE.pdb"
@@ -754,7 +754,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PPF",
         title: "Peptidyl-prolyl Isomerase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Protein Folding", "Isomerase", "Chaperone"],
         description: "Cyclophilin A, peptidyl-prolyl cis-trans isomerase and drug target.",
         url: "https://files.rcsb.org/download/1PPF.pdb"
@@ -762,7 +762,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1FKB",
         title: "FK506-binding Protein",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Immunophilin", "Drug Binding", "Isomerase"],
         description: "FKBP12, binds immunosuppressive drugs FK506 and rapamycin.",
         url: "https://files.rcsb.org/download/1FKB.pdb"
@@ -770,7 +770,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1SRL",
         title: "Seryl-tRNA Synthetase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Aminoacyl-tRNA", "Translation", "ATP-dependent"],
         description: "Seryl-tRNA synthetase, charges tRNA with serine amino acid.",
         url: "https://files.rcsb.org/download/1SRL.pdb"
@@ -778,7 +778,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1ASY",
         title: "Aspartyl-tRNA Synthetase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Aminoacyl-tRNA", "Class II", "Translation"],
         description: "Aspartyl-tRNA synthetase complexed with tRNA, class II synthetase.",
         url: "https://files.rcsb.org/download/1ASY.pdb"
@@ -786,7 +786,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1QF6",
         title: "Queuine tRNA-ribosyltransferase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["tRNA Modification", "Base Exchange", "Bacterial"],
         description: "tRNA-guanine transglycosylase, modifies tRNA with queuine base.",
         url: "https://files.rcsb.org/download/1QF6.pdb"
@@ -794,7 +794,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1DIZ",
         title: "Dihydrofolate Reductase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Folate Metabolism", "Drug Target", "Anticancer"],
         description: "Human dihydrofolate reductase, target of methotrexate and trimethoprim.",
         url: "https://files.rcsb.org/download/1DIZ.pdb"
@@ -802,7 +802,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1J3A",
         title: "Thymidylate Synthase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Nucleotide Synthesis", "Anticancer Target", "Methyltransferase"],
         description: "Thymidylate synthase, synthesizes thymidine monophosphate.",
         url: "https://files.rcsb.org/download/1J3A.pdb"
@@ -810,7 +810,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1GSO",
         title: "Glutamine Synthetase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Amino Acid", "Nitrogen Metabolism", "Dodecamer"],
         description: "Glutamine synthetase, synthesizes glutamine from glutamate and ammonia.",
         url: "https://files.rcsb.org/download/1GSO.pdb"
@@ -818,7 +818,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1B8V",
         title: "Carbonic Anhydrase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Zinc", "CO2 Hydration", "Rapid Catalysis"],
         description: "Human carbonic anhydrase II, extremely efficient zinc metalloenzyme.",
         url: "https://files.rcsb.org/download/1B8V.pdb"
@@ -826,7 +826,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1XFK",
         title: "Carboxypeptidase A",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Zinc", "Protease", "Exopeptidase"],
         description: "Bovine carboxypeptidase A, zinc-dependent exopeptidase.",
         url: "https://files.rcsb.org/download/1XFK.pdb"
@@ -834,7 +834,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PNE",
         title: "Penicillopepsin",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Aspartic Protease", "Fungal", "Inhibitor Complex"],
         description: "Penicillopepsin from Penicillium janthinellum, aspartic protease.",
         url: "https://files.rcsb.org/download/1PNE.pdb"
@@ -842,7 +842,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1TON",
         title: "Subtilisin",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Serine Protease", "Bacterial", "Industrial"],
         description: "Subtilisin Carlsberg, bacterial serine protease used in detergents.",
         url: "https://files.rcsb.org/download/1TON.pdb"
@@ -850,7 +850,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1SGT",
         title: "Beta-glucanase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Hydrolase", "Plant Cell Wall"],
         description: "Beta-1,3-1,4-glucanase, breaks down mixed linkage glucans.",
         url: "https://files.rcsb.org/download/1SGT.pdb"
@@ -858,7 +858,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1CLB",
         title: "Cellulase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Hydrolase", "Plant Cell Wall"],
         description: "Cellulase from Trichoderma reesei, breaks down cellulose.",
         url: "https://files.rcsb.org/download/1CLB.pdb"
@@ -866,7 +866,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1AM1",
         title: "Amylomaltase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Transferase", "Glycogen Metabolism"],
         description: "Amylomaltase, transfers glucose units in starch metabolism.",
         url: "https://files.rcsb.org/download/1AM1.pdb"
@@ -874,7 +874,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1BXW",
         title: "Xylose Isomerase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Isomerase", "Industrial"],
         description: "Glucose/xylose isomerase, converts glucose to fructose industrially.",
         url: "https://files.rcsb.org/download/1BXW.pdb"
@@ -882,7 +882,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1RHD",
         title: "Rhodanese",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Sulfur Transfer", "Two-domain", "Detoxification"],
         description: "Rhodanese, transfers sulfur from thiosulfate to cyanide.",
         url: "https://files.rcsb.org/download/1RHD.pdb"
@@ -890,7 +890,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1G40",
         title: "Glutathione S-transferase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Detoxification", "Xenobiotic", "Conjugation"],
         description: "Glutathione S-transferase, conjugates glutathione to xenobiotics.",
         url: "https://files.rcsb.org/download/1G40.pdb"
@@ -898,7 +898,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1A27",
         title: "Aconitase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Citric Acid Cycle", "Iron-Sulfur", "Isomerase"],
         description: "Aconitase, converts citrate to isocitrate in citric acid cycle.",
         url: "https://files.rcsb.org/download/1A27.pdb"
@@ -906,7 +906,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1FUM",
         title: "Fumarase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Citric Acid Cycle", "Hydratase", "Tetramer"],
         description: "Fumarase, hydrates fumarate to malate in citric acid cycle.",
         url: "https://files.rcsb.org/download/1FUM.pdb"
@@ -914,7 +914,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1SDH",
         title: "Succinate Dehydrogenase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Citric Acid Cycle", "Membrane", "Electron Transport"],
         description: "Succinate dehydrogenase, complex II of electron transport chain.",
         url: "https://files.rcsb.org/download/1SDH.pdb"
@@ -922,7 +922,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1ICT",
         title: "Isocitrate Dehydrogenase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Citric Acid Cycle", "NADP-dependent", "Allosteric"],
         description: "Isocitrate dehydrogenase, key regulatory enzyme in citric acid cycle.",
         url: "https://files.rcsb.org/download/1ICT.pdb"
@@ -930,7 +930,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1LTS",
         title: "Dihydrolipoyl Transacetylase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Pyruvate Dehydrogenase", "Multienzyme Complex", "Lipoyl Domain"],
         description: "E2 component of pyruvate dehydrogenase complex.",
         url: "https://files.rcsb.org/download/1LTS.pdb"
@@ -938,7 +938,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1B0S",
         title: "Biotin Carboxylase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Acetyl-CoA Carboxylase", "ATP-dependent", "Biotin"],
         description: "Biotin carboxylase component of acetyl-CoA carboxylase.",
         url: "https://files.rcsb.org/download/1B0S.pdb"
@@ -946,7 +946,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1MKA",
         title: "Mevalonate Kinase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Isoprenoid", "Kinase", "Metabolic"],
         description: "Mevalonate kinase, first committed step in isoprenoid biosynthesis.",
         url: "https://files.rcsb.org/download/1MKA.pdb"
@@ -954,7 +954,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1DQW",
         title: "Dehydroquinate Synthase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Shikimate", "Metabolic", "Plant"],
         description: "Dehydroquinate synthase, early step in shikimate pathway.",
         url: "https://files.rcsb.org/download/1DQW.pdb"
@@ -962,7 +962,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PII",
         title: "Inorganic Pyrophosphatase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Pyrophosphate", "Hydrolysis", "Essential"],
         description: "Inorganic pyrophosphatase, essential for many biosynthetic reactions.",
         url: "https://files.rcsb.org/download/1PII.pdb"
@@ -970,7 +970,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1F8Z",
         title: "Fructose-1,6-bisphosphatase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Gluconeogenesis", "Allosteric", "Tetramer"],
         description: "Fructose-1,6-bisphosphatase, key gluconeogenic enzyme.",
         url: "https://files.rcsb.org/download/1F8Z.pdb"
@@ -978,7 +978,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1G3P",
         title: "Glycerol-3-phosphate Dehydrogenase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Glycerol", "Oxidoreductase", "NAD-binding"],
         description: "Glycerol-3-phosphate dehydrogenase, connects glycolysis and lipid metabolism.",
         url: "https://files.rcsb.org/download/1G3P.pdb"
@@ -986,7 +986,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1H2A",
         title: "Histone H2A",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Nucleosome", "DNA Packaging", "Chromatin"],
         description: "Core histone H2A, component of nucleosome core particle.",
         url: "https://files.rcsb.org/download/1H2A.pdb"
@@ -994,7 +994,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1HIO",
         title: "Histone H4",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Nucleosome", "DNA Packaging", "Chromatin"],
         description: "Core histone H4, highly conserved component of nucleosome.",
         url: "https://files.rcsb.org/download/1HIO.pdb"
@@ -1002,7 +1002,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1EQZ",
         title: "Nucleosome Core Particle",
-        category: "Complexes",
+        category: 'Complejos',
         tags: ["Chromatin", "Histone", "DNA Packaging"],
         description: "Nucleosome core particle, fundamental unit of chromatin.",
         url: "https://files.rcsb.org/download/1EQZ.pdb"
@@ -1010,7 +1010,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1VA4",
         title: "Vitamin D Receptor",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Nuclear Receptor", "Transcription", "Hormone"],
         description: "Vitamin D receptor DNA-binding domain, nuclear receptor family.",
         url: "https://files.rcsb.org/download/1VA4.pdb"
@@ -1018,7 +1018,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1HCQ",
         title: "HMG-CoA Reductase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Cholesterol", "Membrane", "Drug Target"],
         description: "HMG-CoA reductase, rate-limiting enzyme in cholesterol biosynthesis.",
         url: "https://files.rcsb.org/download/1HCQ.pdb"
@@ -1026,7 +1026,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1LW6",
         title: "Low-density Lipoprotein Receptor",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Cholesterol", "Membrane", "Receptor"],
         description: "LDL receptor ligand-binding domain, mediates cholesterol uptake.",
         url: "https://files.rcsb.org/download/1LW6.pdb"
@@ -1034,7 +1034,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1A1M",
         title: "Annexin",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Calcium", "Membrane", "Phospholipid"],
         description: "Annexin V, calcium-dependent phospholipid-binding protein.",
         url: "https://files.rcsb.org/download/1A1M.pdb"
@@ -1042,7 +1042,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1CYO",
         title: "Cytochrome b562",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Heme", "Electron Transport", "Four-helix Bundle"],
         description: "E. coli cytochrome b562, four-helix bundle heme protein.",
         url: "https://files.rcsb.org/download/1CYO.pdb"
@@ -1050,7 +1050,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1CCR",
         title: "Cytochrome c Reductase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Respiratory Chain", "Membrane", "Complex III"],
         description: "Cytochrome bc1 complex, complex III of respiratory chain.",
         url: "https://files.rcsb.org/download/1CCR.pdb"
@@ -1058,7 +1058,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1OCC",
         title: "Cytochrome c Oxidase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Respiratory Chain", "Membrane", "Complex IV"],
         description: "Cytochrome c oxidase, complex IV of mitochondrial respiratory chain.",
         url: "https://files.rcsb.org/download/1OCC.pdb"
@@ -1066,7 +1066,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1Q16",
         title: "Quinol-fumarate Reductase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Respiratory", "Membrane", "Anaerobic"],
         description: "Quinol-fumarate reductase from anaerobic bacteria.",
         url: "https://files.rcsb.org/download/1Q16.pdb"
@@ -1074,7 +1074,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1DXT",
         title: "Dextranase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Hydrolase", "Dental"],
         description: "Dextranase, breaks down dextran polymers.",
         url: "https://files.rcsb.org/download/1DXT.pdb"
@@ -1082,7 +1082,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1HP1",
         title: "Heparinase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Lyase", "Glycosaminoglycan"],
         description: "Heparinase I, cleaves heparin and heparan sulfate.",
         url: "https://files.rcsb.org/download/1HP1.pdb"
@@ -1090,7 +1090,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1HYA",
         title: "Hyaluronidase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Hydrolase", "Connective Tissue"],
         description: "Hyaluronidase, breaks down hyaluronic acid in connective tissue.",
         url: "https://files.rcsb.org/download/1HYA.pdb"
@@ -1098,7 +1098,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1K9V",
         title: "Keratanase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Carbohydrate", "Hydrolase", "Glycosaminoglycan"],
         description: "Keratanase, cleaves keratan sulfate glycosaminoglycan.",
         url: "https://files.rcsb.org/download/1K9V.pdb"
@@ -1106,7 +1106,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1NOP",
         title: "Nitric Oxide Synthase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Signaling", "Heme", "Flavoprotein"],
         description: "Nitric oxide synthase oxygenase domain, produces NO signaling molecule.",
         url: "https://files.rcsb.org/download/1NOP.pdb"
@@ -1114,7 +1114,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1F20",
         title: "Fatty Acid Binding Protein",
-        category: "Proteins",
+        category: 'Proteínas',
         tags: ["Lipid", "Transport", "Beta Barrel"],
         description: "Fatty acid binding protein, intracellular fatty acid transporter.",
         url: "https://files.rcsb.org/download/1F20.pdb"
@@ -1122,7 +1122,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1PMC",
         title: "Phospholipase C",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Signaling", "Membrane", "Calcium"],
         description: "Phospholipase C, generates second messengers in signaling.",
         url: "https://files.rcsb.org/download/1PMC.pdb"
@@ -1130,7 +1130,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1POC",
         title: "Phospholipase A2",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Lipid", "Membrane", "Calcium"],
         description: "Phospholipase A2, releases fatty acids from phospholipids.",
         url: "https://files.rcsb.org/download/1POC.pdb"
@@ -1138,7 +1138,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1MAI",
         title: "Malate Synthase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Glyoxylate", "Metabolic", "Large"],
         description: "Malate synthase, key enzyme in glyoxylate cycle.",
         url: "https://files.rcsb.org/download/1MAI.pdb"
@@ -1146,7 +1146,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1ISU",
         title: "Isopenicillin N Synthase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Antibiotic", "Iron", "Oxidase"],
         description: "Isopenicillin N synthase, non-heme iron oxidase in penicillin biosynthesis.",
         url: "https://files.rcsb.org/download/1ISU.pdb"
@@ -1154,7 +1154,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1D7T",
         title: "Deacetoxycephalosporin C Synthase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Antibiotic", "Iron", "Oxidase"],
         description: "Deacetoxycephalosporin C synthase, expands penicillin to cephalosporin.",
         url: "https://files.rcsb.org/download/1D7T.pdb"
@@ -1162,7 +1162,7 @@ export const MOLECULE_GALLERY: GalleryItem[] = [
     {
         id: "1B56",
         title: "Beta-lactam Synthetase",
-        category: "Enzymes",
+        category: 'Enzimas',
         tags: ["Antibiotic", "ATP-grasp", "Biosynthesis"],
         description: "Beta-lactam synthetase, forms beta-lactam ring in antibiotics.",
         url: "https://files.rcsb.org/download/1B56.pdb"

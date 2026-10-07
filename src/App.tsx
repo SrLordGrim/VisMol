@@ -12,10 +12,12 @@ import { IconButton, Button } from './components/ui';
 import { Structure, ViewerState, RenderStyle, AnimationMode, Atom, Annotation, PdbMetadata } from './lib/types';
 import { parseStructureFile, loadStructureById } from './lib/fileParsers';
 import { GalleryItem } from './lib/molecules';
+import { Celula } from './lib/celulas';
 import { useIsMobile, useIsTablet } from './hooks/useMediaQuery';
 
 function App() {
     const [structure, setStructure] = useState<Structure | null>(null);
+    const [celula, setCelula] = useState<Celula | null>(null);
     const [annotations, setAnnotations] = useState<Annotation[]>([]);
     const [isPending, startTransition] = useTransition();
     const [isExploreOpen, setIsExploreOpen] = useState(false);
@@ -141,6 +143,7 @@ function App() {
             }
 
             setStructure(parsed);
+            setCelula(null);
             setViewState(prev => ({
                 ...prev,
                 selectedAtom: null,
@@ -191,6 +194,7 @@ function App() {
                 const { structure, filename } = await loadStructureById(pdbId);
 
                 // Set structure directly with metadata overrides
+                setCelula(null);
                 setStructure({
                     ...structure,
                     metadata: {
@@ -231,6 +235,15 @@ function App() {
         } finally {
             setIsLoading(false);
         }
+    };
+
+    const handleLoadCelula = (c: Celula) => {
+        setIsExploreOpen(false);
+        setShowHistory(false);
+        setStructure(null);
+        setAnnotations([]);
+        setViewState(prev => ({ ...prev, selectedAtom: null, hoveredAtom: null }));
+        setCelula(c);
     };
 
     const handleDrop = (event: React.DragEvent) => {
@@ -290,6 +303,7 @@ function App() {
 
     const resetCamera = () => {
         if (structure) setStructure({ ...structure });
+        if (celula) setCelula({ ...celula });
     };
 
     const isDark = viewState.isDarkMode;
@@ -348,7 +362,8 @@ function App() {
                         <div className={`font-mono text-sm ${isDark ? 'text-neutral-400' : 'text-neutral-700'}`}>
                             <span className="flex items-center gap-2">
                                 <span className="font-semibold tracking-wide">Visor</span>
-                                {structure && <span className="opacity-50 mx-2">/</span>}
+                                {(structure || celula) && <span className="opacity-50 mx-2">/</span>}
+                                {celula && <span className="font-mono">{celula.id}</span>}
                                 {structure?.metadata?.id && (
                                     <span className="font-mono">{structure.metadata.id}</span>
                                 )}
@@ -450,6 +465,7 @@ function App() {
 
                     <Viewer
                         structure={structure}
+                        celula={celula}
                         viewState={viewState}
                         annotations={annotations}
                         onAtomClick={handleAtomClick}
@@ -485,6 +501,7 @@ function App() {
                 isOpen={isExploreOpen}
                 onClose={() => setIsExploreOpen(false)}
                 onSelect={handleLoadItem}
+                onSelectCelula={handleLoadCelula}
                 history={history}
                 isDark={isDark}
             />

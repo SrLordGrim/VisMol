@@ -4,10 +4,14 @@ import { OrbitControls, PerspectiveCamera, Stars, Html, Stats, GizmoHelper, Gizm
 import * as THREE from 'three';
 
 import { MoleculeRender } from './MoleculeRender';
+import { CelulaRender } from './CelulaRender';
+import { Celula, urlLicencia, urlNih } from '@/lib/celulas';
 import { Structure, ViewerState, Atom, Annotation, AnimationMode } from '@/lib/types';
 
 interface Props {
     structure: Structure | null;
+    /** Modelo de célula de NIH 3D; se muestra en lugar de una molécula. */
+    celula?: Celula | null;
     viewState: ViewerState;
     annotations: Annotation[];
     onAtomClick: (atom: Atom) => void;
@@ -92,7 +96,7 @@ const RotationController: React.FC<{ animationMode: AnimationMode, structure: St
     return null;
 };
 
-export const Viewer: React.FC<Props> = ({ structure, viewState, annotations, onAtomClick, onAtomHover, onScreenshot, isMobileOrTablet = false }) => {
+export const Viewer: React.FC<Props> = ({ structure, celula = null, viewState, annotations, onAtomClick, onAtomHover, onScreenshot, isMobileOrTablet = false }) => {
     const isDark = viewState.isDarkMode;
     const bgColor = isDark ? '#09090b' : '#f5f5f5';
 
@@ -101,6 +105,31 @@ export const Viewer: React.FC<Props> = ({ structure, viewState, annotations, onA
 
             {/* 2D UI Overlays (Outside Canvas for correct Z-Index) */}
             <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
+
+                {/* Arriba a la izquierda: célula de NIH 3D, con su crédito siempre visible */}
+                {celula && (
+                    <div className={`absolute ${isMobileOrTablet ? 'top-2 left-2 right-2' : 'top-6 left-6'} max-w-lg animate-fade-in pointer-events-auto`}>
+                        <span className={`text-[10px] uppercase tracking-widest ${isDark ? 'text-emerald-400' : 'text-emerald-700'}`}>
+                            {celula.categoria} · {celula.tipo}
+                        </span>
+                        <h1 className={`${isMobileOrTablet ? 'text-xl' : 'text-4xl'} font-extrabold tracking-tight leading-none mt-1 mb-2 ${isDark ? 'text-white' : 'text-neutral-900'}`}>
+                            {celula.titulo}
+                        </h1>
+                        {!isMobileOrTablet && (
+                            <p className={`text-sm leading-relaxed max-w-md ${isDark ? 'text-neutral-400' : 'text-neutral-700'}`}>
+                                {celula.descripcion}
+                            </p>
+                        )}
+                        <p className={`text-xs mt-3 ${isDark ? 'text-neutral-500' : 'text-neutral-600'}`}>
+                            Modelo: {celula.autor ?? 'autor no indicado'} ·{' '}
+                            {urlLicencia(celula)
+                                ? <a href={urlLicencia(celula)!} target="_blank" rel="noopener" className="underline hover:text-emerald-500">{celula.licencia}</a>
+                                : celula.licencia}
+                            {' '}· <a href={urlNih(celula)} target="_blank" rel="noopener" className="underline hover:text-emerald-500">NIH 3D, {celula.id}</a>
+                            {' '}· comprimido para la web
+                        </p>
+                    </div>
+                )}
 
                 {/* Top Left: Molecule Title & Description */}
                 {structure?.metadata && (
@@ -190,6 +219,8 @@ export const Viewer: React.FC<Props> = ({ structure, viewState, annotations, onA
                         </>
                     )}
 
+                    {celula && <CelulaRender celula={celula} opacity={viewState.opacity} />}
+
                     {viewState.showAnnotations && annotations.map(ann => (
                         <Html key={ann.id} position={new THREE.Vector3(...ann.targetPosition)}>
                             <div className={`text-xs px-2 py-1 rounded border shadow-sm pointer-events-none whitespace-nowrap backdrop-blur-sm ${isDark ? 'bg-black/80 text-white border-neutral-700' : 'bg-white/80 text-black border-neutral-300'
@@ -200,11 +231,17 @@ export const Viewer: React.FC<Props> = ({ structure, viewState, annotations, onA
                     ))}
                 </Suspense>
 
-                <OrbitControls makeDefault minDistance={2} maxDistance={1000} />
+                <OrbitControls
+                    makeDefault
+                    minDistance={celula ? 0 : 2}
+                    maxDistance={celula ? Infinity : 1000}
+                    autoRotate={!!celula && viewState.animationMode !== AnimationMode.STATIC}
+                    autoRotateSpeed={viewState.animationMode === AnimationMode.FAST_ROTATION ? 4 : 0.8}
+                />
                 <ScreenshotHandler onCapture={onScreenshot} />
             </Canvas>
 
-            {!structure && (
+            {!structure && !celula && (
                 <div className={`absolute inset-0 flex flex-col items-center justify-center pointer-events-none opacity-40 ${isDark ? 'text-neutral-400' : 'text-neutral-600'}`}>
                     <div className="text-4xl font-light mb-2 tracking-tighter">VisMol</div>
                     <p className="text-xs tracking-widest uppercase">No hay ninguna estructura molecular cargada</p>

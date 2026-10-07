@@ -2,11 +2,13 @@ import { useState, useMemo } from 'react';
 import { Search, X, Grid, ChevronRight, DownloadCloud, FlaskConical, Plus, ArrowRight, Loader2, ChevronDown } from 'lucide-react';
 
 import { MOLECULE_GALLERY, GalleryItem } from '@/lib/molecules';
+import { CELULAS, CATEGORIA_CELULAS, Celula, urlMiniatura } from '@/lib/celulas';
 
 interface Props {
     isOpen: boolean;
     onClose: () => void;
     onSelect: (item: GalleryItem) => void;
+    onSelectCelula: (celula: Celula) => void;
     history: GalleryItem[];
     isDark: boolean;
 }
@@ -76,7 +78,7 @@ const TagModal: React.FC<TagModalProps> = ({ isOpen, onClose, activeTags, onTogg
     );
 };
 
-export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDark }) => {
+export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, onSelectCelula, isDark }) => {
     const [activeCategory, setActiveCategory] = useState<string>('Todas');
     const [searchQuery, setSearchQuery] = useState('');
     const [activeTags, setActiveTags] = useState<string[]>([]);
@@ -85,7 +87,12 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
     const [isLoadingPdb, setIsLoadingPdb] = useState(false);
     const [pdbError, setPdbError] = useState<string | null>(null);
 
-    const categories = ['Todas', ...Array.from(new Set(MOLECULE_GALLERY.map(m => m.category)))];
+    // Las células van justo después de «Todas»: no son moléculas del PDB sino
+    // modelos de NIH 3D, y al elegirlas la cuadrícula cambia de contenido. Al
+    // final de la lista quedaban fuera de la vista, debajo de una docena de
+    // categorías de moléculas.
+    const categories = ['Todas', CATEGORIA_CELULAS, ...Array.from(new Set(MOLECULE_GALLERY.map(m => m.category)))];
+    const verCelulas = activeCategory === CATEGORIA_CELULAS;
     const allTags = Array.from(new Set(MOLECULE_GALLERY.flatMap(m => m.tags)));
 
     // Calculate tag counts
@@ -103,6 +110,8 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
         categories.forEach(cat => {
             if (cat === 'Todas') {
                 counts[cat] = MOLECULE_GALLERY.length;
+            } else if (cat === CATEGORIA_CELULAS) {
+                counts[cat] = CELULAS.length;
             } else {
                 counts[cat] = MOLECULE_GALLERY.filter(item => item.category === cat).length;
             }
@@ -162,6 +171,11 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
             handleLoadPdbById();
         }
     };
+
+    const celulasFiltradas = useMemo(() => {
+        const q = searchQuery.toLowerCase();
+        return CELULAS.filter(c => c.titulo.toLowerCase().includes(q) || c.categoria.toLowerCase().includes(q));
+    }, [searchQuery]);
 
     const filteredItems = useMemo(() => {
         return MOLECULE_GALLERY.filter(item => {
@@ -227,7 +241,7 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                     </nav>
 
                     <div className={`p-4 text-xs text-center border-t shrink-0 ${isDark ? 'opacity-40 text-neutral-500' : 'text-neutral-500'} ${borderClass}`}>
-                        Datos proporcionados por RCSB PDB
+                        {verCelulas ? 'Modelos de NIH 3D, con licencia libre' : 'Datos proporcionados por RCSB PDB'}
                     </div>
                 </div>
 
@@ -435,10 +449,40 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
 
                     {/* Grid */}
                     <div className="flex-1 overflow-y-auto p-4 sm:p-6 scrollbar-thin min-h-0">
+                        {verCelulas ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-                            {filteredItems.map(item => (
+                            {celulasFiltradas.map(c => (
                                 <div
-                                    key={item.id}
+                                    key={c.id}
+                                    onClick={() => onSelectCelula(c)}
+                                    className={`group relative rounded-xl border p-4 cursor-pointer transition-all hover:-translate-y-1 hover:shadow-lg ${isDark
+                                        ? 'bg-neutral-900 border-neutral-800 hover:border-neutral-700 hover:shadow-black/50'
+                                        : 'bg-white border-neutral-200 hover:border-neutral-300 hover:shadow-neutral-200/50'
+                                        }`}
+                                >
+                                    <img
+                                        src={urlMiniatura(c)}
+                                        alt=""
+                                        loading="lazy"
+                                        className={`w-full h-32 object-contain rounded-lg mb-3 ${isDark ? 'bg-neutral-800' : 'bg-neutral-100'}`}
+                                    />
+                                    <span className="text-[10px] uppercase tracking-wider text-neutral-500">
+                                        {c.categoria}
+                                    </span>
+                                    <h3 className="font-bold text-base leading-tight mt-0.5 mb-1 group-hover:text-emerald-500 transition-colors">{c.titulo}</h3>
+                                    <p className={`text-xs ${isDark ? 'text-neutral-500' : 'text-neutral-600'}`}>
+                                        {c.tipo} · {c.licencia}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                        ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                            {filteredItems.map((item, i) => (
+                                <div
+                                    // La galería repite códigos PDB (1SGT aparece dos veces), y una
+                                    // clave duplicada dejaba tarjetas huérfanas al cambiar de categoría.
+                                    key={`${item.id}-${i}`}
                                     onClick={() => onSelect(item)}
                                     className={`group relative rounded-xl border p-5 cursor-pointer transition-all hover:-translate-y-1 hover:shadow-lg ${isDark
                                         ? 'bg-neutral-900 border-neutral-800 hover:border-neutral-700 hover:shadow-black/50'
@@ -472,7 +516,9 @@ export const ExploreModal: React.FC<Props> = ({ isOpen, onClose, onSelect, isDar
                             ))}
                         </div>
 
-                        {filteredItems.length === 0 && (
+                        )}
+
+                        {!verCelulas && filteredItems.length === 0 && (
                             <div className="h-full flex flex-col items-center justify-center opacity-40">
                                 <Grid size={48} className="mb-4" />
                                 <p>No se encontraron moléculas con esos filtros.</p>
