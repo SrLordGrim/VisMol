@@ -1,5 +1,5 @@
 import { Layers, Eye, EyeOff, Activity, Droplet, Box, Type, Sun, Moon, Atom, X, FileText, Tag, Palette, Play, RotateCw, Sparkles } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import {} from 'react';
 
 import { ViewerState, Structure, RenderStyle, AnimationMode } from '@/lib/types';
 import { Select } from '@/components/ui';
@@ -16,35 +16,6 @@ interface Props {
 export const Sidebar: React.FC<Props> = ({ structure, viewState, setViewState, isOpen = true, onClose, isMobile = false }) => {
     const isDark = viewState.isDarkMode;
 
-const [viewCount, setViewCount] = useState<number | null>(null);
-
-useEffect(() => {
-    const fetchViews = async () => {
-        try {
-            const sessionKey = 'vismol_view_counted';
-            const alreadyCounted = sessionStorage.getItem(sessionKey);
-
-            const endpoint = alreadyCounted
-                ? 'https://api.countapi.xyz/get/kevinzhu.me/vismol'
-                : 'https://api.countapi.xyz/hit/kevinzhu.me/vismol';
-
-            const response = await fetch(endpoint);
-            const data = await response.json();
-
-            if (typeof data.value === 'number') {
-                setViewCount(data.value);
-            }
-
-            if (!alreadyCounted) {
-                sessionStorage.setItem(sessionKey, '1');
-            }
-        } catch (error) {
-            console.error('Failed to load view counter', error);
-        }
-    };
-
-    fetchViews();
-}, []);
 
     const toggle = (key: keyof ViewerState) => {
         setViewState(prev => {
@@ -136,6 +107,7 @@ useEffect(() => {
                     </div>
 
                     <div className="flex-1 overflow-y-auto p-5 space-y-8 scrollbar-thin">
+
                         {/* Atom Representation */}
                         <div>
                             <h2 className={`text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2 ${sectionTitleClass}`}>
@@ -267,27 +239,6 @@ useEffect(() => {
             <div className="flex-1 overflow-y-auto p-5 space-y-8 scrollbar-thin">
                 {/* Molecule Details Card */}
                 <div className="space-y-4">
-    <div className="rounded-2xl p-[1px] bg-gradient-to-r from-violet-600 via-fuchsia-500 to-purple-700 shadow-lg shadow-fuchsia-900/20">
-        <div className={`rounded-2xl px-4 py-4 ${isDark ? 'bg-[#0f0a18]' : 'bg-white'}`}>
-            <div className="flex items-center justify-between gap-3">
-                <div>
-                    <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-fuchsia-300/90">
-                        Visitas
-                    </div>
-                    <div className={`text-2xl font-bold mt-1 ${isDark ? 'text-white' : 'text-neutral-900'}`}>
-                        {viewCount !== null ? viewCount.toLocaleString('es-ES') : '...'}
-                    </div>
-                </div>
-                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center shadow-md">
-                    <Eye size={20} className="text-white" />
-                </div>
-            </div>
-            <div className={`text-xs mt-2 ${isDark ? 'text-neutral-400' : 'text-neutral-500'}`}>
-                Contador de Visitas
-            </div>
-        </div>
-    </div>
-
     <h2 className={`text-xs font-bold uppercase tracking-wider mb-2 flex items-center gap-2 ${sectionTitleClass}`}>
         <FileText size={12} /> Detalles de la molécula
     </h2>
@@ -363,27 +314,6 @@ useEffect(() => {
                         </div>
                     )}
                 </div>
-
-<div className="rounded-2xl p-[1px] bg-gradient-to-r from-violet-600 via-fuchsia-500 to-purple-700 shadow-lg shadow-fuchsia-900/20">
-    <div className={`rounded-2xl px-4 py-4 ${isDark ? 'bg-[#0f0a18]' : 'bg-white'}`}>
-        <div className="flex items-center justify-between gap-3">
-            <div>
-                <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-fuchsia-300/90">
-                    Visitas
-                </div>
-                <div className={`text-2xl font-bold mt-1 ${isDark ? 'text-white' : 'text-neutral-900'}`}>
-                    {viewCount !== null ? viewCount.toLocaleString('es-ES') : '...'}
-                </div>
-            </div>
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center shadow-md">
-                <Eye size={20} className="text-white" />
-            </div>
-        </div>
-        <div className={`text-xs mt-2 ${isDark ? 'text-neutral-400' : 'text-neutral-500'}`}>
-            Contador de Visitas
-        </div>
-    </div>
-</div>
 
                 {/* Atom Representation */}
                 <div>
