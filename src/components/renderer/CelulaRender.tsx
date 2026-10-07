@@ -20,11 +20,15 @@ const Pieza: React.FC<{ url: string; color: string | null; opacity: number }> = 
         copia.traverse((o) => {
             const malla = o as THREE.Mesh;
             if (!malla.isMesh) return;
+            // Las mallas convertidas desde STL a veces llegan sin normales, o con
+            // las caras hacia dentro: se veían como siluetas negras.
+            if (!malla.geometry.getAttribute('normal')) malla.geometry.computeVertexNormals();
             // La mayoría de los modelos salen de impresión 3D y no traen color:
             // se pinta cada pieza para distinguir, por ejemplo, célula y núcleo.
             if (color) {
                 malla.material = new THREE.MeshStandardMaterial({
                     color, roughness: 0.55, metalness: 0.05,
+                    side: THREE.DoubleSide,
                     transparent: opacity < 1, opacity,
                 });
             }
@@ -68,7 +72,7 @@ export const CelulaRender: React.FC<{ celula: Celula; opacity: number }> = ({ ce
         const arriba = corto === 1 ? new THREE.Vector3(0, 0, -1) : new THREE.Vector3(0, 1, 0);
         const persp = camera as THREE.PerspectiveCamera;
         persp.up.copy(arriba);
-        persp.position.copy(dir.multiplyScalar(TAMANO * 2.2).addScaledVector(arriba, TAMANO * 0.25));
+        persp.position.copy(dir.multiplyScalar(TAMANO * 3).addScaledVector(arriba, TAMANO * 0.25));
         persp.near = 0.05;
         persp.far = TAMANO * 50;
         persp.updateProjectionMatrix();
@@ -78,6 +82,11 @@ export const CelulaRender: React.FC<{ celula: Celula; opacity: number }> = ({ ce
             ctrl.target.set(0, 0, 0);
             ctrl.update();
         }
+        // La cámara es la misma que usan las moléculas: al salir de la célula
+        // se le devuelve la orientación normal, o la siguiente molécula se vería girada.
+        return () => {
+            persp.up.set(0, 1, 0);
+        };
     }, [celula, camera, controls]);
 
     return (

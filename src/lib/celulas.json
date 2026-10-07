@@ -7,7 +7,13 @@
     "descripcion": "Representación didáctica de una neurona bipolar: un cuerpo celular con dos prolongaciones en polos opuestos, una dendrita y un axón con vaina de mielina. Este tipo de neurona aparece, por ejemplo, en la retina y en el epitelio olfativo.",
     "autor": null,
     "licencia": "CC-BY",
-    "piezas": [{ "origen": "output", "fileId": 780246, "color": "#f0abfc" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 780246,
+        "color": "#f0abfc"
+      }
+    ]
   },
   {
     "id": "3DPX-023457",
@@ -17,7 +23,13 @@
     "descripcion": "Representación didáctica de una neurona multipolar: varias dendritas y un único axón con vaina de mielina. Es el tipo de neurona más común en el sistema nervioso de los vertebrados.",
     "autor": null,
     "licencia": "CC-BY",
-    "piezas": [{ "origen": "output", "fileId": 779342, "color": "#c4b5fd" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 779342,
+        "color": "#c4b5fd"
+      }
+    ]
   },
   {
     "id": "3DPX-002686",
@@ -27,7 +39,13 @@
     "descripcion": "Neurona de la retina de un ratón, reconstruida a partir de imágenes de microscopía electrónica por los jugadores de EyeWire, un proyecto de ciencia ciudadana.",
     "autor": "EyeWire",
     "licencia": "CC-BY",
-    "piezas": [{ "origen": "output", "fileId": 81835, "color": "#5eead4" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 81835,
+        "color": "#5eead4"
+      }
+    ]
   },
   {
     "id": "3DPX-000789",
@@ -38,8 +56,16 @@
     "autor": "swanjere",
     "licencia": "CC-BY-SA",
     "piezas": [
-      { "origen": "output", "fileId": 18940, "color": "#fbbf24" },
-      { "origen": "output", "fileId": 18992, "color": "#f59e0b" }
+      {
+        "origen": "output",
+        "fileId": 18940,
+        "color": "#fbbf24"
+      },
+      {
+        "origen": "output",
+        "fileId": 18992,
+        "color": "#f59e0b"
+      }
     ]
   },
   {
@@ -50,7 +76,13 @@
     "descripcion": "Pieza en relieve basada en un dibujo de Santiago Ramón y Cajal de astrocitos, las células con forma de estrella que sostienen y nutren a las neuronas.",
     "autor": "swanjere",
     "licencia": "Dominio público",
-    "piezas": [{ "origen": "output", "fileId": 285663, "color": "#fcd34d" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 285663,
+        "color": "#fcd34d"
+      }
+    ]
   },
   {
     "id": "3DPX-003115",
@@ -60,19 +92,12 @@
     "descripcion": "Reconstrucción a partir de imágenes de microscopía confocal de una célula del músculo cardíaco (miocito) del ventrículo de una rata adulta, marcada con un anticuerpo contra la alfa-actinina.",
     "autor": "rlevi",
     "licencia": "Dominio público",
-    "piezas": [{ "origen": "output", "fileId": 95305, "color": "#fb7185" }]
-  },
-  {
-    "id": "3DPX-017978",
-    "titulo": "Osteoblasto",
-    "categoria": "Células humanas y animales",
-    "tipo": "Modelo didáctico",
-    "descripcion": "Modelo didáctico de un osteoblasto humano, ampliado 3.000 veces, con su núcleo. Los osteoblastos son las células que fabrican la matriz del hueso.",
-    "autor": "Manuela Alvarado",
-    "licencia": "CC-BY",
     "piezas": [
-      { "origen": "output", "fileId": 541609, "color": "#f9a8d4" },
-      { "origen": "output", "fileId": 541580, "color": "#60a5fa" }
+      {
+        "origen": "output",
+        "fileId": 95305,
+        "color": "#fb7185"
+      }
     ]
   },
   {
@@ -84,8 +109,16 @@
     "autor": "Manuela Alvarado",
     "licencia": "CC-BY",
     "piezas": [
-      { "origen": "output", "fileId": 541752, "color": "#f9a8d4" },
-      { "origen": "output", "fileId": 541734, "color": "#60a5fa" }
+      {
+        "origen": "output",
+        "fileId": 541752,
+        "color": "#f9a8d4"
+      },
+      {
+        "origen": "output",
+        "fileId": 541734,
+        "color": "#60a5fa"
+      }
     ]
   },
   {
@@ -96,17 +129,29 @@
     "descripcion": "Glóbulo rojo infectado por Plasmodium falciparum, el parásito más letal de la malaria. El parásito forma protuberancias en la membrana, donde expone la proteína PfEMP1, que adhiere la célula a la pared de los vasos sanguíneos.",
     "autor": null,
     "licencia": "CC-BY-SA",
-    "piezas": [{ "origen": "output", "fileId": 637313, "color": "#ef4444" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 637313,
+        "color": "#ef4444"
+      }
+    ]
   },
   {
     "id": "3DPX-000003",
     "titulo": "Aparato de Golgi",
     "categoria": "Orgánulos y estructuras",
-    "tipo": "Reconstrucción con datos reales",
-    "descripcion": "Reconstrucción del aparato de Golgi a partir de datos de microscopía electrónica obtenidos por Rachid Sougrat. El Golgi modifica y clasifica proteínas antes de enviarlas a su destino dentro o fuera de la célula.",
+    "tipo": "Placa en relieve con datos reales",
+    "descripcion": "Placa en relieve con la reconstrucción del aparato de Golgi a partir de datos de microscopía electrónica obtenidos por Rachid Sougrat; lleva su nombre grabado en inglés. El Golgi modifica y clasifica proteínas antes de enviarlas a su destino dentro o fuera de la célula.",
     "autor": "swanjere",
     "licencia": "Dominio público",
-    "piezas": [{ "origen": "output", "fileId": 614, "color": "#a3e635" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 614,
+        "color": "#a3e635"
+      }
+    ]
   },
   {
     "id": "3DPX-022796",
@@ -116,7 +161,13 @@
     "descripcion": "Modelo de un peroxisoma, el orgánulo que degrada ácidos grasos de cadena muy larga y descompone el peróxido de hidrógeno, un subproducto tóxico del metabolismo.",
     "autor": null,
     "licencia": "Dominio público",
-    "piezas": [{ "origen": "input", "fileId": 738883, "color": null }]
+    "piezas": [
+      {
+        "origen": "input",
+        "fileId": 738883,
+        "color": null
+      }
+    ]
   },
   {
     "id": "3DPX-010752",
@@ -126,7 +177,13 @@
     "descripcion": "Representación de la pared celular de una bacteria grampositiva: una capa gruesa de peptidoglucano por fuera de la membrana, que retiene el colorante en la tinción de Gram.",
     "autor": "Model3D",
     "licencia": "Dominio público",
-    "piezas": [{ "origen": "output", "fileId": 295627, "color": "#a78bfa" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 295627,
+        "color": "#a78bfa"
+      }
+    ]
   },
   {
     "id": "3DPX-010751",
@@ -136,7 +193,13 @@
     "descripcion": "Representación de la pared celular de una bacteria gramnegativa: una capa fina de peptidoglucano entre la membrana interna y una membrana externa.",
     "autor": "Model3D",
     "licencia": "Dominio público",
-    "piezas": [{ "origen": "output", "fileId": 295659, "color": "#f472b6" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 295659,
+        "color": "#f472b6"
+      }
+    ]
   },
   {
     "id": "3DPX-016304",
@@ -146,7 +209,13 @@
     "descripcion": "Bacteria con forma de bastón que vive en el intestino humano; es el organismo modelo más estudiado de la microbiología. Modelo a escala 20.000 veces; el número grabado identifica la especie dentro de la serie del autor.",
     "autor": "Jacques3DCAD",
     "licencia": "CC-BY-SA",
-    "piezas": [{ "origen": "output", "fileId": 476929, "color": "#34d399" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 476929,
+        "color": "#34d399"
+      }
+    ]
   },
   {
     "id": "3DPX-016309",
@@ -156,7 +225,13 @@
     "descripcion": "Bacteria con forma de coma que causa el cólera. Modelo a escala 20.000 veces; el número grabado identifica la especie dentro de la serie del autor.",
     "autor": "Jacques3DCAD",
     "licencia": "CC-BY-SA",
-    "piezas": [{ "origen": "output", "fileId": 476934, "color": "#38bdf8" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 476934,
+        "color": "#38bdf8"
+      }
+    ]
   },
   {
     "id": "3DPX-016310",
@@ -166,7 +241,13 @@
     "descripcion": "Bacteria esférica habitual de la boca humana. Modelo a escala 20.000 veces; el número grabado identifica la especie dentro de la serie del autor.",
     "autor": "Jacques3DCAD",
     "licencia": "CC-BY-SA",
-    "piezas": [{ "origen": "output", "fileId": 476935, "color": "#facc15" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 476935,
+        "color": "#facc15"
+      }
+    ]
   },
   {
     "id": "3DPX-015597",
@@ -176,19 +257,12 @@
     "descripcion": "Bacteria con forma de espiral (espiroqueta) del intestino de los mamíferos. Modelo a escala 20.000 veces.",
     "autor": "Jacques3DCAD",
     "licencia": "CC-BY-SA",
-    "piezas": [{ "origen": "output", "fileId": 451174, "color": "#fb923c" }]
-  },
-  {
-    "id": "3DPX-017977",
-    "titulo": "Thiomargarita",
-    "categoria": "Bacterias",
-    "tipo": "Modelo didáctico",
-    "descripcion": "Modelo didáctico ampliado 3.000 veces de Thiomargarita, un género de bacterias gigantes: algunas de sus células llegan a verse a simple vista.",
-    "autor": "Manuela Alvarado",
-    "licencia": "CC-BY",
     "piezas": [
-      { "origen": "output", "fileId": 541557, "color": "#e879f9" },
-      { "origen": "output", "fileId": 541526, "color": "#e879f9" }
+      {
+        "origen": "output",
+        "fileId": 451174,
+        "color": "#fb923c"
+      }
     ]
   },
   {
@@ -199,7 +273,13 @@
     "descripcion": "Parásito unicelular con un flagelo. Distintas especies de Trypanosoma causan la enfermedad del sueño africana y el mal de Chagas.",
     "autor": "James Tyrwhitt Drake",
     "licencia": "CC-BY",
-    "piezas": [{ "origen": "output", "fileId": 617383, "color": "#818cf8" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 617383,
+        "color": "#818cf8"
+      }
+    ]
   },
   {
     "id": "3DPX-017180",
@@ -209,6 +289,12 @@
     "descripcion": "Protozoo ciliado de agua dulce, cubierto por unas 17 filas de cilios. En este organismo se descubrieron la telomerasa y el ARN con actividad catalítica (ribozimas).",
     "autor": "ra474",
     "licencia": "CC-BY",
-    "piezas": [{ "origen": "output", "fileId": 761835, "color": "#4ade80" }]
+    "piezas": [
+      {
+        "origen": "output",
+        "fileId": 761835,
+        "color": "#4ade80"
+      }
+    ]
   }
 ]

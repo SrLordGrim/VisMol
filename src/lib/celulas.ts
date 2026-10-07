@@ -35,4 +35,4 @@ const LICENCIAS: Record<Celula['licencia'], string | null> = {
 export const urlLicencia = (c: Celula) => LICENCIAS[c.licencia];
 export const urlNih = (c: Celula) => `https://3d.nih.gov/entries/${c.id}`;
 export const urlPiezas = (c: Celula) => c.piezas.map((_, n) => `/celulas/${c.id}-${n}.glb`);
-export const urlMiniatura = (c: Celula) => `/celulas/${c.id}.png`;
+export const urlMiniatura = (c: Celula) => `/celulas/${c.id}.webp`;

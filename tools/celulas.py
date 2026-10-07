@@ -10,7 +10,7 @@ Solo entran modelos con licencia CC-BY, CC-BY-SA o de dominio público: las
 licencias no comerciales (NC) quedaron fuera porque VisMol tiene un botón de
 Patreon, y las «sin derivados» (ND) no admiten la compresión que se hace aquí.
 
-Uso:  python3 tools/celulas.py        (requiere npx para gltfpack y blender)
+Uso:  python3 tools/celulas.py        (requiere npx para gltfpack, blender e ImageMagick)
 """
 import json
 import os
@@ -74,6 +74,11 @@ def main():
                        check=True, capture_output=True)
         for o in originales:
             os.remove(o.split("#")[0])
+        # WebP a 360×270: la cuadrícula del explorador no necesita más, y en PNG
+        # las miniaturas pesaban casi tanto como los modelos.
+        png = os.path.join(SALIDA, f"{m['id']}.png")
+        subprocess.run(["magick", png, "-resize", "360x270", "-quality", "82", png[:-4] + ".webp"], check=True)
+        os.remove(png)
 
 
 if __name__ == "__main__":
