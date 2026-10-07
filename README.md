@@ -28,4 +28,4 @@ npm run dev        # servidor local
 npm run build      # genera dist/
 ```
 
-Publicación: `npm run build` y copiar `dist/` a `/opt/docker/vismol-site` en el servidor (Nginx).
+Publicación: `npm run build` y copiar `dist/` a `/opt/docker/vismol-site` en el servidor. La configuración de Nginx, con la política de seguridad de contenido (CSP), está en `deploy/nginx-vismol.conf`: el respaldo del servidor no cubre `/etc/nginx`, así que esta es su copia. Si se agrega un servicio externo, hay que sumarlo a la CSP o el navegador lo bloqueará.
